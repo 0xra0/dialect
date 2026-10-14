@@ -1,0 +1,90 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $LangSelector : Adw.Bin {
+
+  notify::selected => $_on_selected_changed();
+
+  MenuButton button {
+    always-show-arrow: true;
+
+    styles [
+      "raised",
+    ]
+
+    child: Box {
+      spacing: 3;
+
+      Label label {
+        ellipsize: end;
+        xalign: 0;
+      }
+
+      Label insight {
+        ellipsize: end;
+        xalign: 0;
+      }
+    };
+
+    popover: Popover popover {
+      height-request: 300;
+
+      show => $_popover_show();
+      closed => $_popover_closed();
+
+      styles [
+        "lang-selector",
+        "menu",
+      ]
+
+      Box {
+        orientation: vertical;
+
+        Box search_box {
+          orientation: vertical;
+
+          SearchEntry search {
+            placeholder-text: _("Search Languages…");
+
+            changed => $_on_search();
+            activate => $_on_search_activate();
+          }
+
+          styles [
+            "search_box",
+          ]
+        }
+
+        ScrolledWindow scroll {
+          vexpand: true;
+          child: Box {
+            orientation: vertical;
+
+            Revealer revealer {
+              reveal-child: true;
+
+              Box {
+                orientation: vertical;
+
+                ListBox recent_list {
+                  selection-mode: single;
+
+                  row-activated => $_activated();
+                }
+
+                Separator separator {
+                }
+              }
+            }
+
+            ListBox lang_list {
+              selection-mode: single;
+
+              row-activated => $_activated();
+            }
+          };
+        }
+      }
+    };
+  }
+}

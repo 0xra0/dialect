@@ -1,0 +1,937 @@
+# Korean translation of the Dialect app for GNOME
+# Copyright (C) Dialect authors and many contributors.
+# This file is distributed under the same license as the dialect package.
+# Seong-ho Cho <shcho@gnome.org>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dialect\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-18 08:35-0500\n"
+"PO-Revision-Date: 2024-04-14 02:01+0000\n"
+"Last-Translator: ID J <tabby4442@gmail.com>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/dialect/dialect/"
+"ko/>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.5-dev\n"
+
+# 번역하면 '방언' '사투리'가 되는데 프로그램 이름이 어색해지므로 그냥 음역한다.
+#. Translators: Do not translate the app name!
+#: data/app.drey.Dialect.desktop.in.in:8
+#: data/app.drey.Dialect.metainfo.xml.in.in:6 dialect/main.py:78
+msgid "Dialect"
+msgstr "다이얼렉트"
+
+#: data/app.drey.Dialect.desktop.in.in:9
+#: data/app.drey.Dialect.metainfo.xml.in.in:7
+msgid "Translate between languages"
+msgstr "다른 언어를 번역합니다"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/app.drey.Dialect.desktop.in.in:13
+msgid ""
+"translate;translation;Google Translate;LibreTranslate;Lingva Translate;Bing "
+"Microsoft Translator;Bing Translator;Microsoft Translator;Yandex Translate; "
+msgstr ""
+"번역;번역;Google 번역;LibreTranslate;Lingva 번역;Bing Microsoft 번역기;Bing "
+"번역기;Microsoft 번역기;Yandex 번역; "
+
+#. For development version
+#: data/app.drey.Dialect.metainfo.xml.in.in:9 dialect/main.py:187
+msgid "A translation app for GNOME."
+msgstr "그놈용 번역앱."
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:12
+msgid "Features:"
+msgstr "기능:"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:16
+msgid "Translation based on Google Translate"
+msgstr "구글 번역 기반 번역"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:17
+msgid ""
+"Translation based on the LibreTranslate API, allowing you to use any public "
+"instance"
+msgstr "모든 공개 인스턴스를 사용할 수 있는 LibreTranslate API 기반 번역"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:18
+msgid "Translation based on Lingva Translate API"
+msgstr "Lingva 번역 API 기반 번역"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:19
+msgid "Translation based on Bing"
+msgstr "Bing 기반 번역"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:20
+msgid "Translation based on Yandex"
+msgstr "Yandex 기반 번역"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:21
+#, fuzzy
+msgid "Translation based on DeepL"
+msgstr "Yandex 기반 번역"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:22
+msgid "Text to speech"
+msgstr "텍스트 음성 변환"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:23
+msgid "Translation history"
+msgstr "번역 이력"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:24
+msgid "Automatic language detection"
+msgstr "자동 언어 감지"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:25
+msgid "Clipboard buttons"
+msgstr "클립보드 단추"
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/app.drey.Dialect.metainfo.xml.in.in:35
+#: data/app.drey.Dialect.metainfo.xml.in.in:37
+msgid "The Dialect Authors"
+msgstr "다이얼렉트 저작자"
+
+#: dialect/languages.py:63 dialect/widgets/lang_selector.py:84
+msgid "Auto"
+msgstr "자동"
+
+#: dialect/main.py:188
+#, fuzzy
+msgid "Copyright 2020–⁠2024 The Dialect Authors"
+msgstr "저작권 2020–⁠2023 The Dialect Authors"
+
+#: dialect/main.py:190
+msgid "translator-credits"
+msgstr "조성호 <shcho@gnome.org>, 성대현 <sungdh86+git@gmail.com>"
+
+#: dialect/main.py:191
+msgid "Donate"
+msgstr "기부"
+
+#: dialect/preferences.py:132
+msgid "Edit Provider Settings"
+msgstr "검색 제공자 설정 수정"
+
+#: dialect/preferences.py:134
+msgid "No Settings for This Provider"
+msgstr "해당 검색 제공자에 대한 설정이 없습니다"
+
+#: dialect/preferences.ui:8
+msgid "Providers"
+msgstr "검색 제공자"
+
+#: dialect/preferences.ui:11
+msgid "Translator"
+msgstr "번역자"
+
+#: dialect/preferences.ui:12
+msgid "Choose from the available translation services."
+msgstr "번역 서비스에서 사용할 수 있는 번역자 항목을 선택하십시오."
+
+#: dialect/preferences.ui:43
+msgid "Text-to-Speech"
+msgstr "텍스트 음성 변환"
+
+#: dialect/preferences.ui:44
+msgid "Choose from the available TTS services."
+msgstr "사용 가능한 TTS서비스 중에서 선택하세요."
+
+#: dialect/preferences.ui:77
+msgid "Behavior"
+msgstr "동작"
+
+#: dialect/preferences.ui:80
+msgid "Live Translation"
+msgstr "실시간 번역"
+
+#: dialect/preferences.ui:81
+msgid "Warning: Your IP address may get banned for API abuse."
+msgstr "경고: API 어뷰징으로 IP 주소가 차단될 수 있습니다."
+
+#: dialect/preferences.ui:87
+msgid "Show Translations in Desktop Search"
+msgstr "데스크톱 검색에서 번역 보이기"
+
+#: dialect/preferences.ui:88
+msgid "Warning: All desktop searches will be sent to the translation service"
+msgstr "경고: 모든 데스크톱 검색은 번역 서비스로 보냅니다"
+
+#: dialect/preferences.ui:95
+msgid "Translation Shortcut"
+msgstr "번역 바로 가기 키"
+
+#: dialect/preferences.ui:96
+msgid "The unselected choice will be used for line break."
+msgstr "선택하지 않은 항목을 줄바꿈 용도로 활용합니다."
+
+#: dialect/preferences.ui:114
+msgid "Default to Auto"
+msgstr "'자동'으로 기본 설정"
+
+#: dialect/preferences.ui:115
+msgid "Use \"Auto\" as the default language"
+msgstr "기본 언어를 \"자동\"으로 사용합니다"
+
+#: dialect/preferences.ui:122
+msgid "Appearance"
+msgstr "모양새"
+
+#: dialect/preferences.ui:125
+msgid "Use Custom Font Size"
+msgstr "사용자 지정 글꼴 크기 사용"
+
+#: dialect/preferences.ui:126
+msgid "System font size is used otherwise."
+msgstr "닫으면 시스템 글꼴 크기를 사용합니다."
+
+#: dialect/preferences.ui:132
+msgid "Default Font Size"
+msgstr "기본 글꼴 크기"
+
+#: dialect/preferences.ui:133
+msgid "Changing the size via shortcuts does not overwrite this."
+msgstr "바로 가기를 통해 크기를 변경해도 덮어쓰지 않습니다."
+
+#: dialect/shortcuts.blp:13
+msgctxt "shortcuts window"
+msgid "Translator"
+msgstr "번역가"
+
+#: dialect/shortcuts.blp:16
+msgctxt "shortcuts window"
+msgid "Translate"
+msgstr "번역"
+
+#: dialect/shortcuts.blp:21
+msgctxt "shortcuts window"
+msgid "Switch Languages"
+msgstr "언어 전환"
+
+#: dialect/shortcuts.blp:26
+msgctxt "shortcuts window"
+msgid "Select source language"
+msgstr "소스 언어 선택"
+
+#: dialect/shortcuts.blp:31
+msgctxt "shortcuts window"
+msgid "Select destination language"
+msgstr "대상 언어 선택"
+
+#: dialect/shortcuts.blp:36
+msgctxt "shortcuts window"
+msgid "Clear source text"
+msgstr "원문 제거"
+
+#: dialect/shortcuts.blp:41
+msgctxt "shortcuts window"
+msgid "Copy translation"
+msgstr "번역 복사"
+
+#: dialect/shortcuts.blp:46
+msgctxt "shortcuts window"
+msgid "Show Pronunciation"
+msgstr "발음 표시"
+
+#: dialect/shortcuts.blp:51
+msgctxt "shortcuts window"
+msgid "Increase font size"
+msgstr "글꼴 크기 늘리기"
+
+#: dialect/shortcuts.blp:56
+msgctxt "shortcuts window"
+msgid "Decrease font size"
+msgstr "글꼴 크기 줄이기"
+
+#: dialect/shortcuts.blp:62
+msgctxt "shortcuts window"
+msgid "Text-to-Speech"
+msgstr "텍스트 언어 전환"
+
+#: dialect/shortcuts.blp:65
+msgctxt "shortcuts window"
+msgid "Listen to source text"
+msgstr "원문 듣기"
+
+#: dialect/shortcuts.blp:70
+msgctxt "shortcuts window"
+msgid "Listen to translation"
+msgstr "번역 듣기"
+
+#: dialect/shortcuts.blp:76
+msgctxt "shortcuts window"
+msgid "Navigation"
+msgstr "탐색"
+
+#: dialect/shortcuts.blp:79
+msgctxt "shortcuts window"
+msgid "Go back in history"
+msgstr "이전 기록 보기"
+
+#: dialect/shortcuts.blp:84
+msgctxt "shortcuts window"
+msgid "Go forward in history"
+msgstr "다음 기록 보기"
+
+#: dialect/shortcuts.blp:90
+msgctxt "shortcuts window"
+msgid "General"
+msgstr "일반"
+
+#: dialect/shortcuts.blp:93
+msgctxt "shortcuts window"
+msgid "Preferences"
+msgstr "기본 설정"
+
+#: dialect/shortcuts.blp:98
+msgctxt "shortcut window"
+msgid "Shortcuts"
+msgstr "바로 가기 키"
+
+#: dialect/shortcuts.blp:103
+msgctxt "shortcuts window"
+msgid "Quit"
+msgstr "끝내기"
+
+#: dialect/window.blp:15
+msgid "Show Pronunciation"
+msgstr "발음 표시"
+
+#: dialect/window.blp:24 dialect/window.py:1203
+msgid "Preferences"
+msgstr "기본 설정"
+
+#: dialect/window.blp:29
+msgid "Keyboard Shortcuts"
+msgstr "키보드 바로 가기 키"
+
+#: dialect/window.blp:34
+msgid "About Dialect"
+msgstr "다이얼렉트 정보"
+
+#: dialect/window.blp:72 dialect/widgets/speech_button.py:40
+msgid "Loading…"
+msgstr "불러오는 중…"
+
+#: dialect/window.blp:94 dialect/window.py:903 dialect/window.py:1187
+#: dialect/window.py:1195 dialect/window.py:1211
+msgid "Retry"
+msgstr "다시 시도"
+
+#: dialect/window.blp:105 dialect/window.blp:146
+msgid "Open Preferences"
+msgstr "기본 설정 열기"
+
+#: dialect/window.blp:135
+msgid "Remove Key and Retry"
+msgstr "키 제거 및 다시 시도"
+
+#: dialect/window.blp:241
+msgid "Main Menu"
+msgstr "주 메뉴"
+
+#: dialect/window.blp:250
+msgid "Previous Translation"
+msgstr "이전 번역"
+
+#: dialect/window.blp:258
+msgid "Next Translation"
+msgstr "다음 번역"
+
+#: dialect/window.blp:270
+msgid "Change Source Language"
+msgstr "원본 언어 바꾸기"
+
+#: dialect/window.blp:275
+msgid "Switch Languages"
+msgstr "언어 전환"
+
+#: dialect/window.blp:282
+msgid "Change Destination Language"
+msgstr "대상 언어 바꾸기"
+
+#: dialect/window.blp:380
+msgid "Clear"
+msgstr "지우기"
+
+#: dialect/window.blp:386
+msgid "Paste"
+msgstr "붙여넣기"
+
+#: dialect/window.blp:392 dialect/window.blp:510
+#: dialect/widgets/speech_button.blp:5 dialect/widgets/speech_button.py:22
+msgid "Listen"
+msgstr "듣기"
+
+#: dialect/window.blp:413
+msgid "Translate"
+msgstr "번역"
+
+#: dialect/window.blp:484
+msgid "Translating…"
+msgstr "번역중…"
+
+#: dialect/window.blp:489
+msgid "Could not Translate the Text"
+msgstr "문자열을 번역할 수 없습니다"
+
+#: dialect/window.blp:496 dialect/search_provider/search_provider.in:245
+msgid "Copy"
+msgstr "복사"
+
+#: dialect/window.blp:504
+msgid "Suggest Translation"
+msgstr "추천 번역"
+
+#: dialect/window.blp:528
+msgid "Cancel"
+msgstr "취소"
+
+#: dialect/window.blp:535
+msgid "Save"
+msgstr "저장"
+
+#: dialect/window.py:399
+msgid "Couldn’t connect to the translation service"
+msgstr "번역 서비스에 연결할 수 없습니다"
+
+#: dialect/window.py:400
+msgid "We can’t connect to the server. Please check for network issues."
+msgstr "서버에 연결할 수 없습니다. 네트워크 문제를 확인하십시오."
+
+#: dialect/window.py:425 dialect/search_provider/search_provider.in:172
+msgid "Failed loading the translation service"
+msgstr "번역 서비스를 불러오기가 실패하였습니다"
+
+#: dialect/window.py:426
+msgid "Please report this in the Dialect bug tracker if the issue persists."
+msgstr "문제가 지속되면 디이얼렉트 버그 트래커에서 이 문제를 신고해주세요."
+
+#: dialect/window.py:444 dialect/window.py:1201
+#: dialect/search_provider/search_provider.in:192
+msgid "API key is required to use the service"
+msgstr "서비스를 이용하려면 API키가 필요합니다"
+
+#: dialect/window.py:445
+msgid "Please set an API key in the preferences."
+msgstr "기본 설정에서 API키를 설정하세요."
+
+#: dialect/window.py:448 dialect/window.py:1193
+#: dialect/search_provider/search_provider.in:190
+msgid "The provided API key is invalid"
+msgstr "주어진 API키가 유효하지 않습니다"
+
+#: dialect/window.py:450
+msgid "Please set a valid API key in the preferences."
+msgstr "기본 설정에서 유효한 API키를 설정하세요."
+
+#: dialect/window.py:453
+msgid "Please set a valid API key or unset the API key in the preferences."
+msgstr "기본 설정에서 유효한 API키를 설정 또는 API키를 설정 해제하세요."
+
+#: dialect/window.py:495
+#, fuzzy
+msgid "Failed loading the text-to-speech service. Retry?"
+msgstr "번역 서비스를 불러오기가 실패하였습니다"
+
+#: dialect/window.py:496
+#, fuzzy
+msgid "Failed loading the text-to-speech service"
+msgstr "번역 서비스를 불러오기가 실패하였습니다"
+
+#: dialect/window.py:498
+#, fuzzy
+msgid "Failed loading the text-to-speech service, check for network issues"
+msgstr "서버에 연결할 수 없습니다. 네트워크 문제를 확인하십시오."
+
+#: dialect/window.py:542
+#, fuzzy
+msgid "Couldn’t read selection clip board!"
+msgstr "번역 복사"
+
+#: dialect/window.py:630
+msgid "Did you mean: "
+msgstr "다음을 의미합니까?: "
+
+#: dialect/window.py:793
+#, fuzzy
+msgid "Copied to clipboard"
+msgstr "번역 복사"
+
+#: dialect/window.py:824
+msgid "New translation has been suggested!"
+msgstr "새로운 번역이 추천되었습니다!"
+
+#: dialect/window.py:826 dialect/window.py:830
+msgid "Suggestion failed."
+msgstr "제안이 실패했습니다."
+
+#: dialect/window.py:894
+#, fuzzy
+msgid "Text-to-Speech failed"
+msgstr "텍스트 음성 변환"
+
+#: dialect/window.py:898
+#, fuzzy
+msgid "Text-to-Speech failed, check for network issues"
+msgstr "번역에 실패했습니다, 네트워크 문제를 확인하십시오"
+
+#: dialect/window.py:907
+#, fuzzy
+msgid "Text-to-Speech failed. Retry?"
+msgstr "텍스트 음성 변환"
+
+#: dialect/window.py:971
+msgid "{} characters limit reached!"
+msgstr "{} 문자 한계에 도달했습니다!"
+
+#: dialect/window.py:1185 dialect/search_provider/search_provider.in:188
+msgid "Translation failed, check for network issues"
+msgstr "번역에 실패했습니다, 네트워크 문제를 확인하십시오"
+
+#: dialect/window.py:1209 dialect/search_provider/search_provider.in:194
+msgid "Translation failed"
+msgstr "번역에 실패했습니다"
+
+#: dialect/widgets/lang_selector.blp:47
+msgid "Search Languages…"
+msgstr "언어 검색…"
+
+#: dialect/widgets/provider_preferences.blp:5
+#: dialect/widgets/provider_preferences.blp:12
+#, fuzzy
+msgid "Provider Preferences"
+msgstr "기본 설정 열기"
+
+#: dialect/widgets/provider_preferences.blp:21
+msgid "Instance URL"
+msgstr "인스턴스 URL"
+
+#: dialect/widgets/provider_preferences.blp:22
+msgid "Enter an Instance URL for the Provider."
+msgstr "번역 서비스용 인스턴스 URL을 입력하십시오."
+
+#: dialect/widgets/provider_preferences.blp:32
+#: dialect/widgets/provider_preferences.blp:62
+msgid "Reset to Default"
+msgstr "기본값으로 재설정"
+
+#: dialect/widgets/provider_preferences.blp:52
+msgid "API Key"
+msgstr "API키"
+
+#: dialect/widgets/provider_preferences.blp:53
+msgid "Enter an API Key for the Provider."
+msgstr "번역 서비스 API키를 입력하십시오."
+
+#: dialect/widgets/provider_preferences.blp:83
+msgid "Character Usage"
+msgstr ""
+
+#: dialect/widgets/speech_button.py:28
+#, fuzzy
+msgid "Cancel Audio"
+msgstr "취소"
+
+#: dialect/widgets/theme_switcher.blp:20
+msgid "Follow System Style"
+msgstr "시스템 모양 따르기"
+
+#: dialect/widgets/theme_switcher.blp:35
+msgid "Light Style"
+msgstr "밝은 모양"
+
+#: dialect/widgets/theme_switcher.blp:50
+msgid "Dark Style"
+msgstr "다크 모양"
+
+#: dialect/search_provider/search_provider.in:201
+msgid "Translate “{text}” with {provider_name}"
+msgstr ""
+
+#: dialect/search_provider/search_provider.in:246
+#, fuzzy
+msgid "Copy translation to clipboard"
+msgstr "번역 복사"
+
+#~ msgid "A network issue has occurred. Retry?"
+#~ msgstr "네트워크 문제가 발생했습니다. 다시 시도할까요?"
+
+#~ msgid "A network issue has occurred. Please try again."
+#~ msgstr "네트워크 문제를 발행했습니다. 다시 시도하십시오."
+
+#~ msgid "translate;translation;"
+#~ msgstr "translate;번역하기;translation;번역;"
+
+#~ msgid "Afrikaans"
+#~ msgstr "아프리칸스어"
+
+#~ msgid "Albanian"
+#~ msgstr "알바니아어"
+
+#~ msgid "Amharic"
+#~ msgstr "암하라어"
+
+#~ msgid "Arabic"
+#~ msgstr "아랍어"
+
+#~ msgid "Armenian"
+#~ msgstr "아르메니아어"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "아제르바이잔어"
+
+#~ msgid "Basque"
+#~ msgstr "바스크어"
+
+#~ msgid "Belarusian"
+#~ msgstr "벨라루스어"
+
+#~ msgid "Bengali"
+#~ msgstr "벵골어"
+
+#~ msgid "Bosnian"
+#~ msgstr "보스니아어"
+
+#~ msgid "Bulgarian"
+#~ msgstr "불가리아어"
+
+#~ msgid "Catalan"
+#~ msgstr "카탈로니아어"
+
+#~ msgid "Cebuano"
+#~ msgstr "세부아노어"
+
+#~ msgid "Chichewa"
+#~ msgstr "냔자어"
+
+#~ msgid "Chinese"
+#~ msgstr "중국어"
+
+#~ msgid "Chinese (Simplified)"
+#~ msgstr "중국어(간체)"
+
+#~ msgid "Chinese (Traditional)"
+#~ msgstr "중국어(번체)"
+
+#~ msgid "Corsican"
+#~ msgstr "코르시카어"
+
+#~ msgid "Croatian"
+#~ msgstr "크로아티아어"
+
+#~ msgid "Czech"
+#~ msgstr "체코어"
+
+#~ msgid "Danish"
+#~ msgstr "덴마크어"
+
+#~ msgid "Dutch"
+#~ msgstr "네덜란드어"
+
+#~ msgid "English"
+#~ msgstr "영어"
+
+#~ msgid "Esperanto"
+#~ msgstr "에스페란토어"
+
+#~ msgid "Estonian"
+#~ msgstr "에스토니아어"
+
+#~ msgid "Filipino"
+#~ msgstr "타갈로그어"
+
+#~ msgid "Finnish"
+#~ msgstr "핀란드어"
+
+#~ msgid "French"
+#~ msgstr "프랑스어"
+
+#~ msgid "Frisian"
+#~ msgstr "서부 프리지아어"
+
+#~ msgid "Galician"
+#~ msgstr "갈리시아어"
+
+#~ msgid "Georgian"
+#~ msgstr "조지아어"
+
+#~ msgid "German"
+#~ msgstr "독일어"
+
+#~ msgid "Greek"
+#~ msgstr "그리스어"
+
+#~ msgid "Gujarati"
+#~ msgstr "구자라트어"
+
+#~ msgid "Haitian Creole"
+#~ msgstr "아이티어"
+
+#~ msgid "Hausa"
+#~ msgstr "하우사어"
+
+#~ msgid "Hawaiian"
+#~ msgstr "하와이어"
+
+#~ msgid "Hebrew"
+#~ msgstr "히브리어"
+
+#~ msgid "Hindi"
+#~ msgstr "힌디어"
+
+#~ msgid "Hmong"
+#~ msgstr "히몸어"
+
+#~ msgid "Hungarian"
+#~ msgstr "헝가리어"
+
+#~ msgid "Icelandic"
+#~ msgstr "아이슬란드어"
+
+#~ msgid "Igbo"
+#~ msgstr "이그보어"
+
+#~ msgid "Indonesian"
+#~ msgstr "인도네시아어"
+
+#~ msgid "Irish"
+#~ msgstr "아일랜드어"
+
+#~ msgid "Italian"
+#~ msgstr "이탈리아어"
+
+#~ msgid "Japanese"
+#~ msgstr "일본어"
+
+#~ msgid "Javanese"
+#~ msgstr "자바어"
+
+#~ msgid "Kannada"
+#~ msgstr "칸나다어"
+
+#~ msgid "Kazakh"
+#~ msgstr "카자흐어"
+
+#~ msgid "Khmer"
+#~ msgstr "크메르어"
+
+#~ msgid "Kinyarwanda"
+#~ msgstr "르완다어"
+
+#~ msgid "Korean"
+#~ msgstr "한국어"
+
+#~ msgid "Kurdish (Kurmanji)"
+#~ msgstr "쿠르드어"
+
+#~ msgid "Kyrgyz"
+#~ msgstr "키르기스어"
+
+#~ msgid "Lao"
+#~ msgstr "라오어"
+
+#~ msgid "Latin"
+#~ msgstr "라틴어"
+
+#~ msgid "Latvian"
+#~ msgstr "라트비아어"
+
+#~ msgid "Lithuanian"
+#~ msgstr "리투아니아어"
+
+#~ msgid "Luxembourgish"
+#~ msgstr "룩셈부르크어"
+
+#~ msgid "Macedonian"
+#~ msgstr "마케도니아어"
+
+#~ msgid "Malagasy"
+#~ msgstr "말라가시어"
+
+#~ msgid "Malay"
+#~ msgstr "말레이어"
+
+#~ msgid "Malayalam"
+#~ msgstr "말라얄람어"
+
+#~ msgid "Maltese"
+#~ msgstr "몰타어"
+
+#~ msgid "Maori"
+#~ msgstr "마오리어"
+
+#~ msgid "Marathi"
+#~ msgstr "마라티어"
+
+#~ msgid "Mongolian"
+#~ msgstr "몽골어"
+
+#~ msgid "Myanmar (Burmese)"
+#~ msgstr "버마어"
+
+#~ msgid "Nepali"
+#~ msgstr "네팔어"
+
+#~ msgid "Norwegian"
+#~ msgstr "노르웨이어"
+
+#~ msgid "Odia (Oriya)"
+#~ msgstr "오리야어"
+
+#~ msgid "Pashto"
+#~ msgstr "파슈토어"
+
+#~ msgid "Persian"
+#~ msgstr "페르시아어"
+
+#~ msgid "Polish"
+#~ msgstr "폴란드어"
+
+#~ msgid "Portuguese"
+#~ msgstr "포르투갈어"
+
+#~ msgid "Punjabi"
+#~ msgstr "펀잡어"
+
+#~ msgid "Romanian"
+#~ msgstr "루마니아어"
+
+#~ msgid "Russian"
+#~ msgstr "러시아어"
+
+#~ msgid "Samoan"
+#~ msgstr "사모아어"
+
+#~ msgid "Scots Gaelic"
+#~ msgstr "스코틀랜드 게일어"
+
+#~ msgid "Serbian"
+#~ msgstr "세르비아어"
+
+#~ msgid "Sesotho"
+#~ msgstr "남부 소토어"
+
+#~ msgid "Shona"
+#~ msgstr "쇼나어"
+
+#~ msgid "Sindhi"
+#~ msgstr "신디어"
+
+#~ msgid "Sinhala"
+#~ msgstr "싱할라어"
+
+#~ msgid "Slovak"
+#~ msgstr "슬로바키아어"
+
+#~ msgid "Slovenian"
+#~ msgstr "슬로베니아어"
+
+#~ msgid "Somali"
+#~ msgstr "소말리아어"
+
+#~ msgid "Spanish"
+#~ msgstr "스페인어"
+
+#~ msgid "Sundanese"
+#~ msgstr "순다어"
+
+#~ msgid "Swahili"
+#~ msgstr "스와힐리어"
+
+#~ msgid "Swedish"
+#~ msgstr "스웨덴어"
+
+#~ msgid "Tajik"
+#~ msgstr "타지크어"
+
+#~ msgid "Tamil"
+#~ msgstr "타밀어"
+
+#~ msgid "Tatar"
+#~ msgstr "타타르어"
+
+#~ msgid "Telugu"
+#~ msgstr "텔루구어"
+
+#~ msgid "Thai"
+#~ msgstr "태국어"
+
+#~ msgid "Turkish"
+#~ msgstr "터키어"
+
+#~ msgid "Turkmen"
+#~ msgstr "투르크멘어"
+
+#~ msgid "Ukrainian"
+#~ msgstr "우크라이나어"
+
+#~ msgid "Urdu"
+#~ msgstr "우르두어"
+
+#~ msgid "Uyghur"
+#~ msgstr "위구르어"
+
+#~ msgid "Uzbek"
+#~ msgstr "우즈베크어"
+
+#~ msgid "Vietnamese"
+#~ msgstr "베트남어"
+
+#~ msgid "Welsh"
+#~ msgstr "웨일스어"
+
+#~ msgid "Xhosa"
+#~ msgstr "코사어"
+
+#~ msgid "Yiddish"
+#~ msgstr "이디시어"
+
+#~ msgid "Yoruba"
+#~ msgstr "요루바어"
+
+#~ msgid "Zulu"
+#~ msgstr "줄루어"
+
+#~ msgid "GitHub page"
+#~ msgstr "깃허브 페이지"
+
+#~ msgid "Translator Instance"
+#~ msgstr "번역 인스턴스"
+
+#~ msgid "Enter a translation service URL."
+#~ msgstr "번역 서비스 URL을 입력하십시오."
+
+#~ msgid "Edit"
+#~ msgstr "편집"
+
+#~ msgid "Use Google for TTS."
+#~ msgstr "TTS에 구글 서비스를 활용합니다."
+
+#~ msgid "Switch languages"
+#~ msgstr "언어 전환"
+
+#, python-brace-format
+#~ msgid "Not a valid {backend} instance"
+#~ msgstr "부적절한 {backend} 인스턴스"
+
+#, fuzzy, python-brace-format
+#~ msgid "Not a valid {backend} API key"
+#~ msgstr "부적절한 {backend} 인스턴스"
+
+#~ msgid ""
+#~ "To reduce API abuse, the GNOME search provider in Dialect is turned off "
+#~ "when Live translation is. Ensure the search provider is also turned on in "
+#~ "the GNOME Settings."
+#~ msgstr ""
+#~ "API 어뷰징 가능성을 줄이려면, 실시간 번역을 진행할 때 다이얼렉트의 그놈 검"
+#~ "색 제공자를 끄십시오. 검색 제공자 또한 그놈 설정에서 껐는지 확인하십시오."
+
+#~ msgid "No network connection detected."
+#~ msgstr "발견한 네트워크 연결이 없습니다."

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>@app-id@</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Dialect</name>
+  <summary>Translate between languages</summary>
+  <description>
+    <p>
+      A translation app for GNOME.
+    </p>
+    <p>
+      Translation Providers:
+    </p>
+    <ul>
+      <li>Google Translate</li>
+      <li>DeepL</li>
+      <li>Kagi Translate</li>
+      <li>Microsoft Translator (Bing)</li>
+      <li>Yandex Translate</li>
+      <li>Lingva Translate</li>
+      <li>LibreTranslate</li>
+    </ul>
+    <p>
+      Features:
+    </p>
+    <ul>
+      <li>Text to speech</li>
+      <li>Translation history</li>
+      <li>Automatic language detection</li>
+      <li>Clipboard buttons</li>
+    </ul>
+  </description>
+  <url type="homepage">https://dialectapp.org/</url>
+  <url type="donation">https://opencollective.com/dialect/</url>
+  <url type="bugtracker">https://github.com/dialect-app/dialect/issues/</url>
+  <url type="help">https://github.com/dialect-app/dialect/discussions/</url>
+  <url type="translate">https://hosted.weblate.org/engage/dialect/</url>
+  <url type="vcs-browser">https://github.com/dialect-app/dialect/</url>
+  <developer id="org.dialectapp">
+      <name>The Dialect Authors</name>
+  </developer>
+  <content_rating type="oars-1.1" />
+
+  <launchable type="desktop-id">@app-id@.desktop</launchable>
+  <translation type="gettext">dialect</translation>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/dialect-app/dialect/main/preview.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/dialect-app/dialect/main/preview-2.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/dialect-app/dialect/main/preview-mobile.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="2.6.1" date="2025-07-26">
+      <description translate="no">
+        <ul>
+          <li>Fix search provider</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.6.0" date="2025-07-22">
+      <description translate="no">
+        <ul>
+          <li>Fix DeepL provider when expected HTTP 429 status is returned</li>
+          <li>Fetch Google languages list dynamically</li>
+          <li>Fetch Yandex languages list dynamically</li>
+          <li>Spell-checking support</li>
+          <li>Fix primary clipboard handling</li>
+          <li>Code cleanups and optimizations</li>
+          <li>Bug fixes</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.5.0" date="2024-10-06">
+      <description translate="no">
+        <ul>
+          <li>User interface improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.4.2" date="2024-07-28">
+      <description translate="no">
+        <ul>
+          <li>Bug fixes</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.4.1" date="2024-06-04">
+      <description translate="no">
+        <ul>
+          <li>Bug fixes</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.4.0" date="2024-06-02">
+      <description translate="no">
+        <ul>
+          <li>Add DeepL provider</li>
+          <li>Bug fixes</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.3.0" date="2024-04-03">
+      <description translate="no">
+        <ul>
+          <li>Make text views font size configurable and temporally modify it with shortcuts or scroll</li>
+          <li>Fix search provider always running in the background</li>
+          <li>Allow opening language selector with keyboard shortcuts</li>
+          <li>Add --selection CLI option to translate the primary clipboard</li>
+          <li>Use new GNOME 46 adaptive dialogs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.2.0" date="2023-11-16">
+      <description translate="no">
+        <ul>
+          <li>Refactored providers implementation to ease future features</li>
+          <li>Added Lingva Text-to-speech support in addition to Google'ss</li>
+          <li>Added Bing translation provider</li>
+          <li>Added Yandex translation provider</li>
+          <li>Updated preferences window</li>
+          <li>Languages list now have localized sorting</li>
+          <li>Fixed Lingva Translate provider bugs</li>
+          <li>Updated translations</li>
+          <li>Fixed minor bugs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.1.1" date="2022-10-22">
+      <description translate="no">
+        <ul>
+          <li>Updated translations</li>
+          <li>Fixed minor bugs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.1.0" date="2022-10-18">
+      <description translate="no">
+        <ul>
+          <li>Update to use libadwaita 1.2 widgets</li>
+          <li>Updated translations</li>
+          <li>Fixed minor bugs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.2" date="2022-07-17">
+      <description translate="no">
+        <ul>
+          <li>Fixed responsive implementation</li>
+          <li>Fixed small stylings</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.1" date="2022-07-14">
+      <description translate="no">
+        <ul>
+          <li>Fixed an issue with scale factor</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.0" date="2022-07-13">
+      <description translate="no">
+        <ul>
+          <li>Ported to GTK4 and libadwaita</li>
+          <li>New in-app color scheme switcher</li>
+          <li>Added Lingva Translate support</li>
+          <li>Google Translate module rewritten from scratch to not rely on external libraries and improve reliability.</li>
+          <li>GNOME Search Provider improvements</li>
+          <li>APP ID changed to app.drey.Dialect</li>
+          <li>Added API keys support for LibreTranslate</li>
+          <li>Added translation suggestions support for LibreTranslate</li>
+          <li>Fixed proxies by rewriting the http backend</li>
+          <li>Character limit is now service-dependent</li>
+          <li>Major code base refactoring</li>
+          <li>Fixed several bugs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.4.1" date="2021-10-20">
+      <description translate="no">
+        <ul>
+          <li>Fix shortcut bug</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.4.0" date="2021-10-18">
+      <description translate="no">
+        <ul>
+          <li>Added accels for most actions</li>
+          <li>Added localized language names</li>
+          <li>Added new translations</li>
+          <li>Fixed several minor bugs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.0" date="2021-05-07">
+      <description translate="no">
+        <ul>
+          <li>Backend refactor</li>
+          <li>Added option to disable Google TTS</li>
+          <li>Added Czech translation</li>
+          <li>Fixed several minor bugs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.0" date="2021-03-08">
+      <description translate="no">
+        <ul>
+          <li>Switch to a new icon</li>
+          <li>Added LibreTranslate backend</li>
+          <li>Added Pronunciations support in Google Translate</li>
+          <li>Added Swedish translation</li>
+          <li>Added Croatian translation</li>
+          <li>Fixed several minor bugs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.1" date="2020-12-08">
+      <description translate="no">
+        <ul>
+          <li>Added a shortcuts window</li>
+          <li>Added Indonesian translation</li>
+          <li>Added Portuguese (BR) translation</li>
+          <li>Fixed several bugs</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.0" date="2020-10-30">
+      <description translate="no">
+        <ul>
+          <li>Added a search provider for GNOME</li>
+          <li>Added support for "Did you mean" suggestions</li>
+          <li>Added a Ctrl+Q shortcut to quit</li>
+          <li>Added Hungarian translation</li>
+          <li>Added Italian translation</li>
+          <li>Added Persian translation</li>
+          <li>Added Russian translation</li>
+          <li>Added Turkish translation</li>
+          <li>Fixed some issues with the icon</li>
+          <li>Fixed several bugs</li>
+          <li>Made some minor UI improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.0" date="2020-10-14">
+      <description translate="no">
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+  <kudos>
+    <kudo>ModernToolkit</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>SearchProvider</kudo>
+  </kudos>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <custom>
+    <value key="Purism::form_factor">mobile</value>
+    <value key="GnomeSoftware::key-colors">[(108, 236, 156), (0, 0, 0)]</value>
+  </custom>
+  <branding>
+    <color type="primary" scheme_preference="light">#a1f6b4</color>
+    <color type="primary" scheme_preference="dark">#157b4c</color>
+  </branding>
+</component>

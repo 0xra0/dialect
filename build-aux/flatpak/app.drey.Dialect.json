@@ -1,0 +1,54 @@
+{
+    "id": "app.drey.Dialect",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "48",
+    "sdk": "org.gnome.Sdk",
+    "command": "dialect",
+    "finish-args": [
+        "--share=network",
+        "--share=ipc",
+        "--device=dri",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--socket=pulseaudio"
+    ],
+    "modules": [
+        "pypi-dependencies.json",
+        {
+            "name": "blueprint",
+            "buildsystem": "meson",
+            "cleanup": ["*"],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/blueprint-compiler",
+                    "tag": "0.18.0",
+                    "commit": "07c9c9df9cd1b6b4454ecba21ee58211e9144a4b"
+                }
+            ]
+        },
+        {
+            "name": "libspelling",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/libspelling.git",
+                    "tag": "0.4.8",
+                    "commit": "07d3bbbbad393b7594918b8df3486531edb61aaf"
+                }
+            ]
+        },
+        {
+            "name": "dialect",
+            "builddir": true,
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "../../."
+                }
+            ]
+        }
+    ]
+}

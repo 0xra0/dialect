@@ -1,0 +1,280 @@
+diff --git a/data/app.drey.Dialect.gschema.xml.in b/data/app.drey.Dialect.gschema.xml.in
+index 72937ff..f3ee123 100644
+--- a/data/app.drey.Dialect.gschema.xml.in
++++ b/data/app.drey.Dialect.gschema.xml.in
+@@ -24,6 +24,16 @@
+     <key type="b" name="src-auto">
+         <default>true</default>
+     </key>
++    <key type="b" name="ollama-preload-on-startup">
++        <default>true</default>
++        <summary>Preload Ollama model on startup</summary>
++        <description>Begin loading the configured Ollama model in the background as soon as Dialect starts.</description>
++    </key>
++    <key type="b" name="ollama-keep-loaded">
++        <default>true</default>
++        <summary>Keep Ollama model loaded while Dialect is open</summary>
++        <description>Use an infinite Ollama keep-alive while Dialect is running to avoid repeated cold starts.</description>
++    </key>
+     <key type="b" name="ollama-unload-on-exit">
+         <default>true</default>
+         <summary>Unload Ollama model on exit</summary>
+diff --git a/dialect/main.py b/dialect/main.py
+index 2d84455..a785981 100755
+--- a/dialect/main.py
++++ b/dialect/main.py
+@@ -42,6 +42,7 @@ class Dialect(Adw.Application):
+         # CLI
+         self.argv: dict[str, str] = {}
+         self._signal_handler: int | None = None
++        self._ollama_preload_key: tuple[str, str, bool] | None = None
+ 
+         # Add command line options
+         self.add_main_option(
+@@ -105,6 +106,42 @@ class Dialect(Adw.Application):
+ 
+         Gst.init(None)  # Init Gst
+ 
++        # Start warming Ollama as early as possible. The request is asynchronous,
++        # so Dialect can finish opening while the large local model is moved into
++        # RAM/VRAM. By the time the user pastes text and presses Translate, the
++        # expensive cold-start step has usually already completed.
++        self.start_ollama_preload()
++
++    def start_ollama_preload(self, force: bool = False):
++        """Warm the active Ollama translation model in the background."""
++        settings = Settings.get()
++        if not settings.ollama_preload_on_startup or settings.active_translator != "ollama":
++            return
++
++        try:
++            from dialect.providers.modules.ollama import Provider as OllamaProvider
++
++            provider = OllamaProvider()
++            key = (provider.instance_url, provider.model, settings.ollama_keep_loaded)
++            if not force and key == self._ollama_preload_key:
++                return
++
++            self._ollama_preload_key = key
++            self.create_asyncio_task(self._preload_ollama(provider, key))
++        except Exception as exc:
++            # Preloading is an optimization only. A failure here must not stop
++            # the application from opening or prevent a later normal request.
++            logging.warning("Could not start Ollama model preload: %s", exc)
++
++    async def _preload_ollama(self, provider, key: tuple[str, str, bool]):
++        try:
++            await provider.preload()
++        except Exception as exc:
++            logging.warning("Ollama background preload failed: %s", exc)
++            if self._ollama_preload_key == key:
++                # Allow a later provider reload/settings change to retry.
++                self._ollama_preload_key = None
++
+     def do_shutdown(self):
+         # Ollama keeps models resident after a request according to keep_alive.
+         # On normal Dialect shutdown, explicitly release the configured model so
+diff --git a/dialect/preferences.py b/dialect/preferences.py
+index 650b19d..9db4b9a 100644
+--- a/dialect/preferences.py
++++ b/dialect/preferences.py
+@@ -30,6 +30,8 @@ class DialectPreferencesDialog(Adw.PreferencesDialog):
+     search_provider: Adw.SwitchRow = Gtk.Template.Child()  # type: ignore
+     translate_accel: Adw.ComboRow = Gtk.Template.Child()  # type: ignore
+     src_auto: Adw.SwitchRow = Gtk.Template.Child()  # type: ignore
++    ollama_preload_on_startup: Adw.SwitchRow = Gtk.Template.Child()  # type: ignore
++    ollama_keep_loaded: Adw.SwitchRow = Gtk.Template.Child()  # type: ignore
+     ollama_unload_on_exit: Adw.SwitchRow = Gtk.Template.Child()  # type: ignore
+     translator: Adw.ComboRow = Gtk.Template.Child()  # type: ignore
+     translator_config: Gtk.Button = Gtk.Template.Child()  # type: ignore
+@@ -50,6 +52,18 @@ class DialectPreferencesDialog(Adw.PreferencesDialog):
+         Settings.get().bind("sp-translation", self.search_provider, "active", Gio.SettingsBindFlags.DEFAULT)
+         Settings.get().bind("translate-accel", self.translate_accel, "selected", Gio.SettingsBindFlags.DEFAULT)
+         Settings.get().bind("src-auto", self.src_auto, "active", Gio.SettingsBindFlags.DEFAULT)
++        Settings.get().bind(
++            "ollama-preload-on-startup",
++            self.ollama_preload_on_startup,
++            "active",
++            Gio.SettingsBindFlags.DEFAULT,
++        )
++        Settings.get().bind(
++            "ollama-keep-loaded",
++            self.ollama_keep_loaded,
++            "active",
++            Gio.SettingsBindFlags.DEFAULT,
++        )
+         Settings.get().bind(
+             "ollama-unload-on-exit",
+             self.ollama_unload_on_exit,
+@@ -88,6 +102,12 @@ class DialectPreferencesDialog(Adw.PreferencesDialog):
+         # Translator loading
+         self.window.connect("notify::translator-loading", self._on_translator_loading)
+ 
++        # Apply Ollama warm-model settings immediately when possible. Turning
++        # keep-loaded on refreshes the resident model with keep_alive=-1; turning
++        # it off refreshes the finite keep-alive instead.
++        self.ollama_preload_on_startup.connect("notify::active", self._on_ollama_runtime_setting)
++        self.ollama_keep_loaded.connect("notify::active", self._on_ollama_runtime_setting)
++
+         # Search Provider
+         if os.getenv("XDG_CURRENT_DESKTOP") != "GNOME":
+             self.search_provider.props.visible = False
+@@ -148,6 +168,18 @@ class DialectPreferencesDialog(Adw.PreferencesDialog):
+         self.translator.props.sensitive = not window.translator_loading
+         self.tts.props.sensitive = not window.translator_loading
+ 
++
++    def _on_ollama_runtime_setting(self, _row, _pspec):
++        if Settings.get().active_translator != "ollama":
++            return
++        if not Settings.get().ollama_preload_on_startup:
++            return
++
++        app = Gio.Application.get_default()
++        start_preload = getattr(app, "start_ollama_preload", None)
++        if callable(start_preload):
++            start_preload(force=True)
++
+     def _custom_default_font_size_switch(self, row: Adw.ExpanderRow, _value):
+         """Called on self.custom_default_font_size::notify::enable-expansion signal"""
+         system_font_size = Settings.get().system_font_size
+diff --git a/dialect/preferences.ui b/dialect/preferences.ui
+index 72af21e..1f223a3 100644
+--- a/dialect/preferences.ui
++++ b/dialect/preferences.ui
+@@ -115,6 +115,18 @@
+                 <property name="subtitle" translatable="yes">Use "Auto" as the default language</property>
+               </object>
+             </child>
++            <child>
++              <object class="AdwSwitchRow" id="ollama_preload_on_startup">
++                <property name="title" translatable="yes">Preload Ollama Model on Startup</property>
++                <property name="subtitle" translatable="yes">Start loading the model in the background as soon as Dialect opens, before the first translation.</property>
++              </object>
++            </child>
++            <child>
++              <object class="AdwSwitchRow" id="ollama_keep_loaded">
++                <property name="title" translatable="yes">Keep Ollama Model Loaded While Open</property>
++                <property name="subtitle" translatable="yes">Keep the model resident in RAM/VRAM for instant subsequent translations during this Dialect session.</property>
++              </object>
++            </child>
+             <child>
+               <object class="AdwSwitchRow" id="ollama_unload_on_exit">
+                 <property name="title" translatable="yes">Unload Ollama Model on Exit</property>
+diff --git a/dialect/providers/modules/ollama.py b/dialect/providers/modules/ollama.py
+index c69961c..f1ced8f 100644
+--- a/dialect/providers/modules/ollama.py
++++ b/dialect/providers/modules/ollama.py
+@@ -66,6 +66,51 @@ class Provider(SoupProvider):
+         # structured-output/chat-parser support from the custom model.
+         return self._url("/api/generate")
+ 
++    @staticmethod
++    def _keep_alive_value():
++        """Return the session keep-alive requested from Ollama.
++
++        A negative keep_alive tells Ollama to keep the model resident until it
++        is explicitly unloaded. Dialect pairs this with its normal-shutdown
++        cleanup, giving warm translations while the app is open without leaving
++        the model in VRAM after the app exits.
++        """
++        from dialect.settings import Settings
++
++        return -1 if Settings.get().ollama_keep_loaded else "10m"
++
++    async def preload(self) -> bool:
++        """Warm the configured model without generating any text.
++
++        Ollama documents an empty /api/generate prompt as the model preload
++        operation. This is intentionally safe to call repeatedly: when the
++        model is already resident, it mainly refreshes its keep-alive.
++        """
++        model = self._resolved_model or await self._resolve_model()
++        keep_alive = self._keep_alive_value()
++        logging.info("Preloading Ollama model in background: %s", model)
++
++        response = await self.post(
++            self.generate_url,
++            {
++                "model": model,
++                "prompt": "",
++                "stream": False,
++                "keep_alive": keep_alive,
++            },
++        )
++
++        if not isinstance(response, dict):
++            raise UnexpectedError("Ollama returned a non-JSON response while preloading the model")
++
++        self._resolved_model = model
++        load_ns = response.get("load_duration")
++        if isinstance(load_ns, int):
++            logging.info("Ollama model ready: %s (load %.2fs)", model, load_ns / 1_000_000_000)
++        else:
++            logging.info("Ollama model ready: %s", model)
++        return True
++
+     async def _models(self, instance_url: str | None = None) -> list[str]:
+         url = self.tags_url if instance_url is None else self._url_for(instance_url, "/api/tags")
+         response = await self.get(url, check_common=False)
+@@ -277,7 +322,9 @@ class Provider(SoupProvider):
+             # extra latency, so Dialect explicitly sends false by default. The
+             # provider preference can turn it back on for users who want it.
+             "think": self.thinking,
+-            "keep_alive": "10m",
++            # Keep the already-warmed model resident for the entire Dialect
++            # session when requested. This removes repeated model-load latency.
++            "keep_alive": self._keep_alive_value(),
+         }
+ 
+         logging.debug(
+diff --git a/dialect/settings.py b/dialect/settings.py
+index e0c121b..bb2279e 100644
+--- a/dialect/settings.py
++++ b/dialect/settings.py
+@@ -178,6 +178,24 @@ class Settings(Gio.Settings):
+     def show_pronunciation(self, state: bool):
+         self.set_boolean("show-pronunciation", state)
+ 
++    @property
++    def ollama_preload_on_startup(self) -> bool:
++        """Return whether Dialect should warm the Ollama model in the background."""
++        return self.get_boolean("ollama-preload-on-startup")
++
++    @ollama_preload_on_startup.setter
++    def ollama_preload_on_startup(self, state: bool):
++        self.set_boolean("ollama-preload-on-startup", state)
++
++    @property
++    def ollama_keep_loaded(self) -> bool:
++        """Return whether the Ollama model should stay resident while Dialect is open."""
++        return self.get_boolean("ollama-keep-loaded")
++
++    @ollama_keep_loaded.setter
++    def ollama_keep_loaded(self, state: bool):
++        self.set_boolean("ollama-keep-loaded", state)
++
+     @property
+     def ollama_unload_on_exit(self) -> bool:
+         """Return whether Dialect should unload its Ollama model on exit."""
+diff --git a/dialect/window.py b/dialect/window.py
+index 0bcd4d1..9eecaa0 100644
+--- a/dialect/window.py
++++ b/dialect/window.py
+@@ -327,6 +327,16 @@ class DialectWindow(Adw.ApplicationWindow):
+ 
+         # Translator object
+         self.provider["trans"] = TRANSLATORS[provider]()
++
++        # Selecting/reloading Ollama (for example after changing its model or
++        # server URL) should immediately start warming the new configuration.
++        # The application-level helper de-duplicates the normal startup request.
++        if provider == "ollama":
++            app = Gio.Application.get_default()
++            start_preload = getattr(app, "start_ollama_preload", None)
++            if callable(start_preload):
++                start_preload()
++
+         # Get saved languages
+         self.src_langs = self.provider["trans"].recent_src_langs
+         self.dest_langs = self.provider["trans"].recent_dest_langs

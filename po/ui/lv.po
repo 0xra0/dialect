@@ -1,0 +1,975 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dialect package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dialect\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-18 08:35-0500\n"
+"PO-Revision-Date: 2022-07-18 21:20+0000\n"
+"Last-Translator: Roberts Gasūns <rob4iks3@gmail.com>\n"
+"Language-Team: Latvian <https://hosted.weblate.org/projects/dialect/dialect/"
+"lv/>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= "
+"19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
+"X-Generator: Weblate 4.14-dev\n"
+
+#. Translators: Do not translate the app name!
+#: data/app.drey.Dialect.desktop.in.in:8
+#: data/app.drey.Dialect.metainfo.xml.in.in:6 dialect/main.py:78
+msgid "Dialect"
+msgstr "Dialect"
+
+#: data/app.drey.Dialect.desktop.in.in:9
+#: data/app.drey.Dialect.metainfo.xml.in.in:7
+msgid "Translate between languages"
+msgstr "Valodu tulkošana"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/app.drey.Dialect.desktop.in.in:13
+msgid ""
+"translate;translation;Google Translate;LibreTranslate;Lingva Translate;Bing "
+"Microsoft Translator;Bing Translator;Microsoft Translator;Yandex Translate; "
+msgstr ""
+
+#. For development version
+#: data/app.drey.Dialect.metainfo.xml.in.in:9 dialect/main.py:187
+msgid "A translation app for GNOME."
+msgstr "GNOME tulkošanas applikācija."
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:12
+msgid "Features:"
+msgstr "Iespējas:"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:16
+msgid "Translation based on Google Translate"
+msgstr "Tulkojums balstīts uz Google Tulkotāju"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:17
+msgid ""
+"Translation based on the LibreTranslate API, allowing you to use any public "
+"instance"
+msgstr ""
+"Tulkojums balstīts uz LibreTranslate API, atļaujot jums izmantot jebkuru "
+"publisku instanci"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:18
+msgid "Translation based on Lingva Translate API"
+msgstr "Tulkojums balstīts uz Lingva Translate API"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:19
+#, fuzzy
+msgid "Translation based on Bing"
+msgstr "Tulkojums balstīts uz Lingva Translate API"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:20
+#, fuzzy
+msgid "Translation based on Yandex"
+msgstr "Tulkojums balstīts uz Google Tulkotāju"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:21
+#, fuzzy
+msgid "Translation based on DeepL"
+msgstr "Tulkojums balstīts uz Google Tulkotāju"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:22
+msgid "Text to speech"
+msgstr "Teksta lasīšana"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:23
+msgid "Translation history"
+msgstr "Tulkošanas vēsture"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:24
+msgid "Automatic language detection"
+msgstr "Automātiska valodas atpazīšana"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:25
+msgid "Clipboard buttons"
+msgstr "Starpliktuves pogas"
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/app.drey.Dialect.metainfo.xml.in.in:35
+#: data/app.drey.Dialect.metainfo.xml.in.in:37
+msgid "The Dialect Authors"
+msgstr "Dialect Autori"
+
+#: dialect/languages.py:63 dialect/widgets/lang_selector.py:84
+msgid "Auto"
+msgstr "Automātiski"
+
+#: dialect/main.py:188
+#, fuzzy
+msgid "Copyright 2020–⁠2024 The Dialect Authors"
+msgstr "Autortiesības 2020–⁠2022 The Dialect Authors"
+
+#: dialect/main.py:190
+msgid "translator-credits"
+msgstr "Anonīms"
+
+#: dialect/main.py:191
+msgid "Donate"
+msgstr ""
+
+#: dialect/preferences.py:132
+msgid "Edit Provider Settings"
+msgstr ""
+
+#: dialect/preferences.py:134
+msgid "No Settings for This Provider"
+msgstr ""
+
+#: dialect/preferences.ui:8
+#, fuzzy
+msgid "Providers"
+msgstr "Meklēšanas Provaideris"
+
+#: dialect/preferences.ui:11
+msgid "Translator"
+msgstr "Tulkotājs"
+
+#: dialect/preferences.ui:12
+msgid "Choose from the available translation services."
+msgstr "Izvēlieties no pieejamajiem tulkošanas pakalpojumiem."
+
+#: dialect/preferences.ui:43
+msgid "Text-to-Speech"
+msgstr "Teksts-uz-Runu"
+
+#: dialect/preferences.ui:44
+#, fuzzy
+msgid "Choose from the available TTS services."
+msgstr "Izvēlieties no pieejamajiem tulkošanas pakalpojumiem."
+
+#: dialect/preferences.ui:77
+msgid "Behavior"
+msgstr "Darba režīms"
+
+#: dialect/preferences.ui:80
+msgid "Live Translation"
+msgstr "Tūlītēja tulkošana"
+
+#: dialect/preferences.ui:81
+msgid "Warning: Your IP address may get banned for API abuse."
+msgstr ""
+"Uzmanību: Jūsu IP adrese varētu tikt bloķēta pārmērīgas API izmantošanas dēļ."
+
+#: dialect/preferences.ui:87
+msgid "Show Translations in Desktop Search"
+msgstr "Rādīt tulkojumus darbvirsmas meklētājā"
+
+#: dialect/preferences.ui:88
+msgid "Warning: All desktop searches will be sent to the translation service"
+msgstr ""
+"Brīdinājums: Visi darbvirsmas meklējumi tiks nosūtīti tulkošanas pakalpojumam"
+
+#: dialect/preferences.ui:95
+msgid "Translation Shortcut"
+msgstr "Tulkošanas saīsne"
+
+#: dialect/preferences.ui:96
+msgid "The unselected choice will be used for line break."
+msgstr "Neatzīmētā izvēle tiks izmantota rindas pārtraukumam."
+
+#: dialect/preferences.ui:114
+msgid "Default to Auto"
+msgstr "Auto kā noklusējums"
+
+#: dialect/preferences.ui:115
+msgid "Use \"Auto\" as the default language"
+msgstr "Izmantot \"Auto\" kā noklusējuma valodu"
+
+#: dialect/preferences.ui:122
+msgid "Appearance"
+msgstr "Izskats"
+
+#: dialect/preferences.ui:125
+msgid "Use Custom Font Size"
+msgstr ""
+
+#: dialect/preferences.ui:126
+msgid "System font size is used otherwise."
+msgstr ""
+
+#: dialect/preferences.ui:132
+#, fuzzy
+msgid "Default Font Size"
+msgstr "Auto kā noklusējums"
+
+#: dialect/preferences.ui:133
+msgid "Changing the size via shortcuts does not overwrite this."
+msgstr ""
+
+#: dialect/shortcuts.blp:13
+msgctxt "shortcuts window"
+msgid "Translator"
+msgstr "Tulkotājs"
+
+#: dialect/shortcuts.blp:16
+msgctxt "shortcuts window"
+msgid "Translate"
+msgstr "Tulkot"
+
+#: dialect/shortcuts.blp:21
+msgctxt "shortcuts window"
+msgid "Switch Languages"
+msgstr "Pārslēgt Valodas"
+
+#: dialect/shortcuts.blp:26
+#, fuzzy
+msgctxt "shortcuts window"
+msgid "Select source language"
+msgstr "Pārslēgt valodas"
+
+#: dialect/shortcuts.blp:31
+msgctxt "shortcuts window"
+msgid "Select destination language"
+msgstr ""
+
+#: dialect/shortcuts.blp:36
+msgctxt "shortcuts window"
+msgid "Clear source text"
+msgstr "Nodzēst pirmtekstu"
+
+#: dialect/shortcuts.blp:41
+msgctxt "shortcuts window"
+msgid "Copy translation"
+msgstr "Kopēt tulkojumu"
+
+#: dialect/shortcuts.blp:46
+msgctxt "shortcuts window"
+msgid "Show Pronunciation"
+msgstr "Parādīt Izrunu"
+
+#: dialect/shortcuts.blp:51
+msgctxt "shortcuts window"
+msgid "Increase font size"
+msgstr ""
+
+#: dialect/shortcuts.blp:56
+msgctxt "shortcuts window"
+msgid "Decrease font size"
+msgstr ""
+
+#: dialect/shortcuts.blp:62
+msgctxt "shortcuts window"
+msgid "Text-to-Speech"
+msgstr "Teksts-uz-Runu"
+
+#: dialect/shortcuts.blp:65
+msgctxt "shortcuts window"
+msgid "Listen to source text"
+msgstr "Klausīties pirmtekstu"
+
+#: dialect/shortcuts.blp:70
+msgctxt "shortcuts window"
+msgid "Listen to translation"
+msgstr "Klausīties tulkojumu"
+
+#: dialect/shortcuts.blp:76
+msgctxt "shortcuts window"
+msgid "Navigation"
+msgstr "Navigācija"
+
+#: dialect/shortcuts.blp:79
+msgctxt "shortcuts window"
+msgid "Go back in history"
+msgstr "Atpakaļ vēsturē"
+
+#: dialect/shortcuts.blp:84
+msgctxt "shortcuts window"
+msgid "Go forward in history"
+msgstr "Uz priekšu vēsturē"
+
+#: dialect/shortcuts.blp:90
+msgctxt "shortcuts window"
+msgid "General"
+msgstr "Vispārīgi"
+
+#: dialect/shortcuts.blp:93
+msgctxt "shortcuts window"
+msgid "Preferences"
+msgstr "Iestatījumi"
+
+#: dialect/shortcuts.blp:98
+msgctxt "shortcut window"
+msgid "Shortcuts"
+msgstr "Saīsnes"
+
+#: dialect/shortcuts.blp:103
+msgctxt "shortcuts window"
+msgid "Quit"
+msgstr "Iziet"
+
+#: dialect/window.blp:15
+msgid "Show Pronunciation"
+msgstr "Rādīt izrunu"
+
+#: dialect/window.blp:24 dialect/window.py:1203
+msgid "Preferences"
+msgstr "Iestatījumi"
+
+#: dialect/window.blp:29
+msgid "Keyboard Shortcuts"
+msgstr "Klaviatūras Saīsnes"
+
+#: dialect/window.blp:34
+msgid "About Dialect"
+msgstr "Par Dialect"
+
+#: dialect/window.blp:72 dialect/widgets/speech_button.py:40
+msgid "Loading…"
+msgstr "Lādējās…"
+
+#: dialect/window.blp:94 dialect/window.py:903 dialect/window.py:1187
+#: dialect/window.py:1195 dialect/window.py:1211
+msgid "Retry"
+msgstr "Mēģināt vēlreiz"
+
+#: dialect/window.blp:105 dialect/window.blp:146
+msgid "Open Preferences"
+msgstr "Atvērt iestatījumus"
+
+#: dialect/window.blp:135
+msgid "Remove Key and Retry"
+msgstr "Dzēst atslēgu un mēģināt atkārtoti"
+
+#: dialect/window.blp:241
+msgid "Main Menu"
+msgstr ""
+
+#: dialect/window.blp:250
+#, fuzzy
+msgid "Previous Translation"
+msgstr "Iepriekšējais tulkojums"
+
+#: dialect/window.blp:258
+#, fuzzy
+msgid "Next Translation"
+msgstr "Nākošais tulkojums"
+
+#: dialect/window.blp:270
+msgid "Change Source Language"
+msgstr ""
+
+#: dialect/window.blp:275
+#, fuzzy
+msgid "Switch Languages"
+msgstr "Pārslēgt Valodas"
+
+#: dialect/window.blp:282
+msgid "Change Destination Language"
+msgstr ""
+
+#: dialect/window.blp:380
+msgid "Clear"
+msgstr "Notīrīt"
+
+#: dialect/window.blp:386
+msgid "Paste"
+msgstr "Ielīmēt"
+
+#: dialect/window.blp:392 dialect/window.blp:510
+#: dialect/widgets/speech_button.blp:5 dialect/widgets/speech_button.py:22
+msgid "Listen"
+msgstr "Klausīties"
+
+#: dialect/window.blp:413
+msgid "Translate"
+msgstr "Tulkot"
+
+#: dialect/window.blp:484
+msgid "Translating…"
+msgstr "Notiek tulkošana…"
+
+#: dialect/window.blp:489
+#, fuzzy
+msgid "Could not Translate the Text"
+msgstr "Neizdevās iztulkot tekstu"
+
+#: dialect/window.blp:496 dialect/search_provider/search_provider.in:245
+msgid "Copy"
+msgstr "Kopēt"
+
+#: dialect/window.blp:504
+msgid "Suggest Translation"
+msgstr "Ieteikt tulkojumu"
+
+#: dialect/window.blp:528
+msgid "Cancel"
+msgstr "Atcelt"
+
+#: dialect/window.blp:535
+msgid "Save"
+msgstr "Saglabāt"
+
+#: dialect/window.py:399
+msgid "Couldn’t connect to the translation service"
+msgstr "Neizdevās pievienoties pie tulkošanas pakalpojuma"
+
+#: dialect/window.py:400
+msgid "We can’t connect to the server. Please check for network issues."
+msgstr "Neizdevās pievienoties serverim. Lūdzu, pārbaudiet tīkla problēmas."
+
+#: dialect/window.py:425 dialect/search_provider/search_provider.in:172
+msgid "Failed loading the translation service"
+msgstr "Neizdevās ielādēt tulkošanas pakalpojumu"
+
+#: dialect/window.py:426
+msgid "Please report this in the Dialect bug tracker if the issue persists."
+msgstr ""
+"Lūdzu, paziņojiet par šo Dialect kļūdu izsekotājā, ja šī problēma turpinās."
+
+#: dialect/window.py:444 dialect/window.py:1201
+#: dialect/search_provider/search_provider.in:192
+msgid "API key is required to use the service"
+msgstr "Pakalpojuma izmantošanai, nepieciešama API atslēga"
+
+#: dialect/window.py:445
+msgid "Please set an API key in the preferences."
+msgstr "Lūdzu, ievadiet iestatījumos API atslēgu."
+
+#: dialect/window.py:448 dialect/window.py:1193
+#: dialect/search_provider/search_provider.in:190
+msgid "The provided API key is invalid"
+msgstr "Norādītā API atslēga nav derīga"
+
+#: dialect/window.py:450
+msgid "Please set a valid API key in the preferences."
+msgstr "Lūdzu, ievadiet iestatījumos derīgu API atslēgu."
+
+#: dialect/window.py:453
+msgid "Please set a valid API key or unset the API key in the preferences."
+msgstr "Lūdzu, ievadiet iestatījumos derīgu API atslēgu vai nodzēsiet to."
+
+#: dialect/window.py:495
+#, fuzzy
+msgid "Failed loading the text-to-speech service. Retry?"
+msgstr "Neizdevās ielādēt tulkošanas pakalpojumu"
+
+#: dialect/window.py:496
+#, fuzzy
+msgid "Failed loading the text-to-speech service"
+msgstr "Neizdevās ielādēt tulkošanas pakalpojumu"
+
+#: dialect/window.py:498
+#, fuzzy
+msgid "Failed loading the text-to-speech service, check for network issues"
+msgstr "Neizdevās pievienoties serverim. Lūdzu, pārbaudiet tīkla problēmas."
+
+#: dialect/window.py:542
+#, fuzzy
+msgid "Couldn’t read selection clip board!"
+msgstr "Kopēt tulkojumu"
+
+#: dialect/window.py:630
+msgid "Did you mean: "
+msgstr "Vai jūs domājāt: "
+
+#: dialect/window.py:793
+#, fuzzy
+msgid "Copied to clipboard"
+msgstr "Kopēt tulkojumu"
+
+#: dialect/window.py:824
+msgid "New translation has been suggested!"
+msgstr "Ir jauns tulkojuma ieteikums!"
+
+#: dialect/window.py:826 dialect/window.py:830
+msgid "Suggestion failed."
+msgstr "Ieteikums neizdevās."
+
+#: dialect/window.py:894
+#, fuzzy
+msgid "Text-to-Speech failed"
+msgstr "Teksts-uz-Runu"
+
+#: dialect/window.py:898
+#, fuzzy
+msgid "Text-to-Speech failed, check for network issues"
+msgstr "Tulkojums neizdevās, lūdzu, pārbaudiet tīkla kļūdas"
+
+#: dialect/window.py:907
+#, fuzzy
+msgid "Text-to-Speech failed. Retry?"
+msgstr "Teksts-uz-Runu"
+
+#: dialect/window.py:971
+msgid "{} characters limit reached!"
+msgstr "{} rakstzīmju limits ir sasniegts!"
+
+#: dialect/window.py:1185 dialect/search_provider/search_provider.in:188
+msgid "Translation failed, check for network issues"
+msgstr "Tulkojums neizdevās, lūdzu, pārbaudiet tīkla kļūdas"
+
+#: dialect/window.py:1209 dialect/search_provider/search_provider.in:194
+msgid "Translation failed"
+msgstr "Tulkošana neizdevās"
+
+#: dialect/widgets/lang_selector.blp:47
+msgid "Search Languages…"
+msgstr "Meklēt valodas…"
+
+#: dialect/widgets/provider_preferences.blp:5
+#: dialect/widgets/provider_preferences.blp:12
+#, fuzzy
+msgid "Provider Preferences"
+msgstr "Atvērt iestatījumus"
+
+#: dialect/widgets/provider_preferences.blp:21
+msgid "Instance URL"
+msgstr ""
+
+#: dialect/widgets/provider_preferences.blp:22
+#, fuzzy
+msgid "Enter an Instance URL for the Provider."
+msgstr "Ievadiet tulkošanas pakalpojuma API atslēgu."
+
+#: dialect/widgets/provider_preferences.blp:32
+#: dialect/widgets/provider_preferences.blp:62
+#, fuzzy
+msgid "Reset to Default"
+msgstr "Atiestatīt uz noklusējumu"
+
+#: dialect/widgets/provider_preferences.blp:52
+msgid "API Key"
+msgstr "API atslēga"
+
+#: dialect/widgets/provider_preferences.blp:53
+#, fuzzy
+msgid "Enter an API Key for the Provider."
+msgstr "Ievadiet tulkošanas pakalpojuma API atslēgu."
+
+#: dialect/widgets/provider_preferences.blp:83
+msgid "Character Usage"
+msgstr ""
+
+#: dialect/widgets/speech_button.py:28
+#, fuzzy
+msgid "Cancel Audio"
+msgstr "Atcelt"
+
+#: dialect/widgets/theme_switcher.blp:20
+#, fuzzy
+msgid "Follow System Style"
+msgstr "Izmantot sistēmas skatu"
+
+#: dialect/widgets/theme_switcher.blp:35
+#, fuzzy
+msgid "Light Style"
+msgstr "Gaišais skats"
+
+#: dialect/widgets/theme_switcher.blp:50
+#, fuzzy
+msgid "Dark Style"
+msgstr "Tumšais skats"
+
+#: dialect/search_provider/search_provider.in:201
+msgid "Translate “{text}” with {provider_name}"
+msgstr ""
+
+#: dialect/search_provider/search_provider.in:246
+#, fuzzy
+msgid "Copy translation to clipboard"
+msgstr "Kopēt tulkojumu"
+
+#, fuzzy
+#~ msgid "A network issue has occurred. Retry?"
+#~ msgstr "Ir notikusi tīkla kļūda. Mēģināt vēlreiz?"
+
+#, fuzzy
+#~ msgid "A network issue has occurred. Please try again."
+#~ msgstr "Ir notikusi tīkla kļūda. Lūdzu, mēģiniet vēlreiz."
+
+#~ msgid "translate;translation;"
+#~ msgstr "tulkot;translation;"
+
+#~ msgid "Afrikaans"
+#~ msgstr "Afrikāņu"
+
+#~ msgid "Albanian"
+#~ msgstr "Albāņu"
+
+#~ msgid "Amharic"
+#~ msgstr "Amharu"
+
+#~ msgid "Arabic"
+#~ msgstr "Arābu"
+
+#~ msgid "Armenian"
+#~ msgstr "Armēņu"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "Azerbaidžāņu"
+
+#~ msgid "Basque"
+#~ msgstr "Basku"
+
+#~ msgid "Belarusian"
+#~ msgstr "Baltkrievu"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengāļu"
+
+#~ msgid "Bosnian"
+#~ msgstr "Bosniešu"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Bulgāru"
+
+#~ msgid "Catalan"
+#~ msgstr "Katalāņu"
+
+#~ msgid "Cebuano"
+#~ msgstr "Sebuāno"
+
+#~ msgid "Chichewa"
+#~ msgstr "Čičeva"
+
+#~ msgid "Chinese"
+#~ msgstr "Ķīniešu"
+
+#~ msgid "Chinese (Simplified)"
+#~ msgstr "Ķīniešu (Vienkāršotā)"
+
+#~ msgid "Chinese (Traditional)"
+#~ msgstr "Ķīniešu (Tradicionālā)"
+
+#~ msgid "Corsican"
+#~ msgstr "Korsikāņu"
+
+#~ msgid "Croatian"
+#~ msgstr "Horvātu"
+
+#~ msgid "Czech"
+#~ msgstr "Čehu"
+
+#~ msgid "Danish"
+#~ msgstr "Dāņu"
+
+#~ msgid "Dutch"
+#~ msgstr "Holandiešu"
+
+#~ msgid "English"
+#~ msgstr "Angļu"
+
+#~ msgid "Esperanto"
+#~ msgstr "Esperanto"
+
+#~ msgid "Estonian"
+#~ msgstr "Igauņu"
+
+#~ msgid "Filipino"
+#~ msgstr "Filipīniešu"
+
+#~ msgid "Finnish"
+#~ msgstr "Somu"
+
+#~ msgid "French"
+#~ msgstr "Franču"
+
+#~ msgid "Frisian"
+#~ msgstr "Frīzu"
+
+#~ msgid "Galician"
+#~ msgstr "Galisiešu"
+
+#~ msgid "Georgian"
+#~ msgstr "Gruzīnu"
+
+#~ msgid "German"
+#~ msgstr "Vācu"
+
+#~ msgid "Greek"
+#~ msgstr "Grieķu"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gudžaratu"
+
+#~ msgid "Haitian Creole"
+#~ msgstr "Haiti Kreolu"
+
+#~ msgid "Hausa"
+#~ msgstr "Hausa"
+
+#~ msgid "Hawaiian"
+#~ msgstr "Havajiešu"
+
+#~ msgid "Hebrew"
+#~ msgstr "Ebreju"
+
+#~ msgid "Hindi"
+#~ msgstr "Hindu"
+
+#~ msgid "Hmong"
+#~ msgstr "Hmong"
+
+#~ msgid "Hungarian"
+#~ msgstr "Ungāru"
+
+#~ msgid "Icelandic"
+#~ msgstr "Islandiešu"
+
+#~ msgid "Igbo"
+#~ msgstr "Igbo"
+
+#~ msgid "Indonesian"
+#~ msgstr "Indonēziešu"
+
+#~ msgid "Irish"
+#~ msgstr "Īru"
+
+#~ msgid "Italian"
+#~ msgstr "Itāļu"
+
+#~ msgid "Japanese"
+#~ msgstr "Japāņu"
+
+#~ msgid "Javanese"
+#~ msgstr "Javiešu"
+
+#~ msgid "Kannada"
+#~ msgstr "Kannada"
+
+#~ msgid "Kazakh"
+#~ msgstr "Kazahu"
+
+#~ msgid "Khmer"
+#~ msgstr "Khmeri"
+
+#~ msgid "Kinyarwanda"
+#~ msgstr "Kinyarwanda"
+
+#~ msgid "Korean"
+#~ msgstr "Korejiešu"
+
+#~ msgid "Kurdish (Kurmanji)"
+#~ msgstr "Kurdu (Kurmanji)"
+
+#~ msgid "Kyrgyz"
+#~ msgstr "Kirgīzu"
+
+#~ msgid "Lao"
+#~ msgstr "Lao"
+
+#~ msgid "Latin"
+#~ msgstr "Latīņu"
+
+#~ msgid "Latvian"
+#~ msgstr "Latviešu"
+
+#~ msgid "Lithuanian"
+#~ msgstr "Lietuviešu"
+
+#~ msgid "Luxembourgish"
+#~ msgstr "Luksemburgiešu"
+
+#~ msgid "Macedonian"
+#~ msgstr "Maķedoniešu"
+
+#~ msgid "Malagasy"
+#~ msgstr "Madagaskariešu"
+
+#~ msgid "Malay"
+#~ msgstr "Malajiešu"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malajalu"
+
+#~ msgid "Maltese"
+#~ msgstr "Maltiešu"
+
+#~ msgid "Maori"
+#~ msgstr "Maori"
+
+#~ msgid "Marathi"
+#~ msgstr "Maratu"
+
+#~ msgid "Mongolian"
+#~ msgstr "Mongoļu"
+
+#~ msgid "Myanmar (Burmese)"
+#~ msgstr "Mjanma (birmiešu)"
+
+#~ msgid "Nepali"
+#~ msgstr "Nepāliešu"
+
+#~ msgid "Norwegian"
+#~ msgstr "Norvēģu"
+
+#~ msgid "Odia (Oriya)"
+#~ msgstr "Odija (Orija)"
+
+#~ msgid "Pashto"
+#~ msgstr "Puštu"
+
+#~ msgid "Persian"
+#~ msgstr "Persiešu"
+
+#~ msgid "Polish"
+#~ msgstr "Poļu"
+
+#~ msgid "Portuguese"
+#~ msgstr "Portugāļu"
+
+#~ msgid "Punjabi"
+#~ msgstr "Pandžabī"
+
+#~ msgid "Romanian"
+#~ msgstr "Rumāņu"
+
+#~ msgid "Russian"
+#~ msgstr "Krievu"
+
+#~ msgid "Samoan"
+#~ msgstr "Samoāņu"
+
+#~ msgid "Scots Gaelic"
+#~ msgstr "Skotu gēlu"
+
+#~ msgid "Serbian"
+#~ msgstr "Serbu"
+
+#~ msgid "Sesotho"
+#~ msgstr "Sesoto"
+
+#~ msgid "Shona"
+#~ msgstr "Šona"
+
+#~ msgid "Sindhi"
+#~ msgstr "Sindhi"
+
+#~ msgid "Sinhala"
+#~ msgstr "Sinhala"
+
+#~ msgid "Slovak"
+#~ msgstr "Slovāku"
+
+#~ msgid "Slovenian"
+#~ msgstr "Slovēņu"
+
+#~ msgid "Somali"
+#~ msgstr "Somālijas"
+
+#~ msgid "Spanish"
+#~ msgstr "Spāņu"
+
+#~ msgid "Sundanese"
+#~ msgstr "Sundaniešu"
+
+#~ msgid "Swahili"
+#~ msgstr "Svahili"
+
+#~ msgid "Swedish"
+#~ msgstr "Zviedru"
+
+#~ msgid "Tajik"
+#~ msgstr "Tadžiku"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamilu"
+
+#~ msgid "Tatar"
+#~ msgstr "Tatāru"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugu"
+
+#~ msgid "Thai"
+#~ msgstr "Taju"
+
+#~ msgid "Turkish"
+#~ msgstr "Turku"
+
+#~ msgid "Turkmen"
+#~ msgstr "Turkmēņu"
+
+#~ msgid "Ukrainian"
+#~ msgstr "Ukraiņu"
+
+#~ msgid "Urdu"
+#~ msgstr "Urdu"
+
+#~ msgid "Uyghur"
+#~ msgstr "Uiguru"
+
+#~ msgid "Uzbek"
+#~ msgstr "Uzbeku"
+
+#~ msgid "Vietnamese"
+#~ msgstr "Vjetnamiešu"
+
+#~ msgid "Welsh"
+#~ msgstr "Velsiešu"
+
+#~ msgid "Xhosa"
+#~ msgstr "Ksosa"
+
+#~ msgid "Yiddish"
+#~ msgstr "Jidiš"
+
+#~ msgid "Yoruba"
+#~ msgstr "Joruba"
+
+#~ msgid "Zulu"
+#~ msgstr "Zulu"
+
+#~ msgid "GitHub page"
+#~ msgstr "GitHub lapa"
+
+#~ msgid "Translator Instance"
+#~ msgstr "Tulkošanas Instance"
+
+#~ msgid "Enter a translation service URL."
+#~ msgstr "Ievadiet tulkošanas pakalpojuma URL."
+
+#~ msgid "Edit"
+#~ msgstr "Rediģēt"
+
+#~ msgid "Use Google for TTS."
+#~ msgstr "Izmantot lasīšanai Google."
+
+#, python-brace-format
+#~ msgid "Not a valid {backend} instance"
+#~ msgstr "Nederīga {backend} instance"
+
+#, python-brace-format
+#~ msgid "Not a valid {backend} API key"
+#~ msgstr "Nederīga {backend} API atslēga"
+
+#, python-brace-format
+#~ msgid ""
+#~ "Failed loading \"{url}\", check if the instance address is correct or "
+#~ "report in the Dialect bug tracker if the issue persists."
+#~ msgstr ""
+#~ "Neizdevās ielādēt \"{url}\", pārbaudiet vai norādītā adrese ir pareiza, "
+#~ "vai paziņojiet par šo kļūdu Dialect kļūdu izsekotājā, ja problēma "
+#~ "turpinās."
+
+#, python-brace-format
+#~ msgid ""
+#~ "We can’t connect to the {service} instance \"{url}\".\n"
+#~ " Please check for network issues or if the address is correct."
+#~ msgstr ""
+#~ "Nav iespējams pievienoties pie {service} - \"{url}\"\n"
+#~ "Lūdzu, pārbaudiet vai nav problēmu ar tīkla savienojumu un vai norādītā "
+#~ "adrese ir pareiza."
+
+#~ msgid ""
+#~ "To reduce API abuse, the GNOME search provider in Dialect is turned off "
+#~ "when Live translation is. Ensure the search provider is also turned on in "
+#~ "the GNOME Settings."
+#~ msgstr ""
+#~ "Lai samazinātu API pārmērīgu izmantošanu, GNOME meklēšanas provaideris "
+#~ "Dialect programmā ir atslēgts, kad Tūlītējā tulkošana ir ieslēgta. "
+#~ "Pārliecinieties, ka meklēšanas provaideris ir ieslēgts arī GNOME "
+#~ "iestatījumos."
+
+#~ msgid "No network connection detected."
+#~ msgstr "Tīkla savienojums netika atrasts."

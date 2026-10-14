@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="DialectPreferencesDialog" parent="AdwPreferencesDialog">
+    <child>
+      <object class="AdwPreferencesPage">
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title" translatable="yes">Providers</property>
+            <child>
+              <object class="AdwComboRow" id="translator">
+                <property name="title" translatable="yes">Translator</property>
+                <property name="subtitle" translatable="yes">Choose from the available translation services.</property>
+                <property name="title-lines">1</property>
+                <property name="subtitle-lines">3</property>
+                <property name="expression">
+                  <lookup name="prettyname" type="ProviderObject"></lookup>
+                </property>
+                <signal name="notify::selected" handler="_switch_translator"/>
+
+                <child>
+                  <object class="GtkSeparator">
+                    <property name="margin-start">12</property>
+                    <property name="margin-bottom">12</property>
+                    <property name="margin-top">12</property>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkButton" id="translator_config">
+                    <property name="valign">center</property>
+                    <property name="icon-name">dialect-settings-symbolic</property>
+                    <signal name="notify::sensitive" handler="_provider_settings_tooltip"/>
+
+                    <style>
+                      <class name="flat" />
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwComboRow" id="tts">
+                <property name="title" translatable="yes">Text-to-Speech</property>
+                <property name="subtitle" translatable="yes">Choose from the available TTS services.</property>
+                <property name="title-lines">1</property>
+                <property name="subtitle-lines">3</property>
+                <property name="expression">
+                  <lookup name="prettyname" type="ProviderObject"></lookup>
+                </property>
+                <signal name="notify::selected" handler="_switch_tts"/>
+
+                <child>
+                  <object class="GtkSeparator">
+                    <property name="margin-start">12</property>
+                    <property name="margin-bottom">12</property>
+                    <property name="margin-top">12</property>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkButton" id="tts_config">
+                    <property name="valign">center</property>
+                    <property name="icon-name">dialect-settings-symbolic</property>
+                    <signal name="notify::sensitive" handler="_provider_settings_tooltip"/>
+
+                    <style>
+                      <class name="flat" />
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title" translatable="yes">Behavior</property>
+            <child>
+              <object class="AdwExpanderRow" id="live_translation">
+                <property name="title" translatable="yes">Live Translation</property>
+                <property name="subtitle" translatable="yes">Warning: Your IP address may get banned for API abuse.</property>
+                <property name="show-enable-switch">True</property>
+                <property name="enable-expansion">False</property>
+                <property name="expanded">True</property>
+                <child>
+                  <object class="AdwSwitchRow" id="search_provider">
+                    <property name="title" translatable="yes">Show Translations in Desktop Search</property>
+                    <property name="subtitle" translatable="yes">Warning: All desktop searches will be sent to the translation service</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwComboRow" id="translate_accel">
+                <property name="title" translatable="yes">Translation Shortcut</property>
+                <property name="subtitle" translatable="yes">The unselected choice will be used for line break.</property>
+                <binding name="sensitive">
+                  <closure function="is_not_true" type="gboolean">
+                    <lookup name="enable-expansion">live_translation</lookup>
+                  </closure>
+                </binding>
+                <property name="model">
+                  <object class="GtkStringList">
+                    <items>
+                      <item>Ctrl + Enter</item>
+                      <item>Enter</item>
+                    </items>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSwitchRow" id="src_auto">
+                <property name="title" translatable="yes">Default to Auto</property>
+                <property name="subtitle" translatable="yes">Use "Auto" as the default language</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSwitchRow" id="ollama_preload_on_startup">
+                <property name="title" translatable="yes">Preload Ollama Model on Startup</property>
+                <property name="subtitle" translatable="yes">Start loading the model in the background as soon as Dialect opens, before the first translation.</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSwitchRow" id="ollama_keep_loaded">
+                <property name="title" translatable="yes">Keep Ollama Model Loaded While Open</property>
+                <property name="subtitle" translatable="yes">Keep the model resident in RAM/VRAM for instant subsequent translations during this Dialect session.</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSwitchRow" id="ollama_unload_on_exit">
+                <property name="title" translatable="yes">Unload Ollama Model on Exit</property>
+                <property name="subtitle" translatable="yes">Release the configured Ollama model from RAM and VRAM when Dialect closes.</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title" translatable="yes">Appearance</property>
+            <child>
+              <object class="AdwExpanderRow" id="custom_default_font_size">
+                <property name="title" translatable="yes">Use Custom Font Size</property>
+                <property name="subtitle" translatable="yes">System font size is used otherwise.</property>
+                <property name="show-enable-switch">True</property>
+                <property name="enable-expansion">False</property>
+                <property name="expanded">True</property>
+                <child>
+                  <object class="AdwSpinRow" id="default_font_size">
+                    <property name="title" translatable="yes">Default Font Size</property>
+                    <property name="subtitle" translatable="yes">Changing the size via shortcuts does not overwrite this.</property>
+                    <property name="adjustment">
+                      <object class="GtkAdjustment">
+                        <property name="lower">6</property>
+                        <property name="upper">72</property>
+                        <property name="value">0</property>
+                        <property name="page-increment">10</property>
+                        <property name="step-increment">5</property>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

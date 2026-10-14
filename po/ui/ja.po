@@ -1,0 +1,972 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dialect package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dialect\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-18 08:35-0500\n"
+"PO-Revision-Date: 2023-02-27 17:38+0000\n"
+"Last-Translator: Noboru Higuchi <kikutiyo@gmail.com>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/dialect/dialect/"
+"ja/>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.16-dev\n"
+
+#. Translators: Do not translate the app name!
+#: data/app.drey.Dialect.desktop.in.in:8
+#: data/app.drey.Dialect.metainfo.xml.in.in:6 dialect/main.py:78
+msgid "Dialect"
+msgstr "Dialect"
+
+#: data/app.drey.Dialect.desktop.in.in:9
+#: data/app.drey.Dialect.metainfo.xml.in.in:7
+msgid "Translate between languages"
+msgstr "言語を翻訳"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/app.drey.Dialect.desktop.in.in:13
+msgid ""
+"translate;translation;Google Translate;LibreTranslate;Lingva Translate;Bing "
+"Microsoft Translator;Bing Translator;Microsoft Translator;Yandex Translate; "
+msgstr ""
+
+#. For development version
+#: data/app.drey.Dialect.metainfo.xml.in.in:9 dialect/main.py:187
+msgid "A translation app for GNOME."
+msgstr "GNOME のための翻訳アプリケーション。"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:12
+msgid "Features:"
+msgstr "機能:"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:16
+msgid "Translation based on Google Translate"
+msgstr "Google翻訳をベースにした翻訳"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:17
+msgid ""
+"Translation based on the LibreTranslate API, allowing you to use any public "
+"instance"
+msgstr ""
+"LibreTranslate APIに基づく翻訳で、任意のパブリックインスタンスを使用できます"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:18
+msgid "Translation based on Lingva Translate API"
+msgstr "Lingva Translate APIに基づく翻訳"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:19
+#, fuzzy
+msgid "Translation based on Bing"
+msgstr "Lingva Translate APIに基づく翻訳"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:20
+#, fuzzy
+msgid "Translation based on Yandex"
+msgstr "Google翻訳をベースにした翻訳"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:21
+#, fuzzy
+msgid "Translation based on DeepL"
+msgstr "Google翻訳をベースにした翻訳"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:22
+msgid "Text to speech"
+msgstr "テキスト読み上げ"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:23
+msgid "Translation history"
+msgstr "翻訳履歴"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:24
+msgid "Automatic language detection"
+msgstr "言語の自動判定"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:25
+msgid "Clipboard buttons"
+msgstr "クリップボードボタン"
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/app.drey.Dialect.metainfo.xml.in.in:35
+#: data/app.drey.Dialect.metainfo.xml.in.in:37
+msgid "The Dialect Authors"
+msgstr "Dialect の作者"
+
+#: dialect/languages.py:63 dialect/widgets/lang_selector.py:84
+msgid "Auto"
+msgstr "自動判別"
+
+#: dialect/main.py:188
+#, fuzzy
+msgid "Copyright 2020–⁠2024 The Dialect Authors"
+msgstr "著作権 2020-2022 The Dialect Authors"
+
+#: dialect/main.py:190
+msgid "translator-credits"
+msgstr ""
+"Noboru Higuchi\n"
+"Asahi95"
+
+#: dialect/main.py:191
+msgid "Donate"
+msgstr ""
+
+#: dialect/preferences.py:132
+msgid "Edit Provider Settings"
+msgstr ""
+
+#: dialect/preferences.py:134
+msgid "No Settings for This Provider"
+msgstr ""
+
+#: dialect/preferences.ui:8
+#, fuzzy
+msgid "Providers"
+msgstr "検索プロバイダ"
+
+#: dialect/preferences.ui:11
+msgid "Translator"
+msgstr "翻訳"
+
+#: dialect/preferences.ui:12
+msgid "Choose from the available translation services."
+msgstr "利用可能な翻訳サービスを選択します。"
+
+#: dialect/preferences.ui:43
+msgid "Text-to-Speech"
+msgstr "Text-to-Speech"
+
+#: dialect/preferences.ui:44
+#, fuzzy
+msgid "Choose from the available TTS services."
+msgstr "利用可能な翻訳サービスを選択します。"
+
+#: dialect/preferences.ui:77
+msgid "Behavior"
+msgstr "動作"
+
+#: dialect/preferences.ui:80
+msgid "Live Translation"
+msgstr "ライブ翻訳"
+
+#: dialect/preferences.ui:81
+msgid "Warning: Your IP address may get banned for API abuse."
+msgstr ""
+"注意 : あなたの IP アドレスが API の乱用により接続拒否される可能性がありま"
+"す。"
+
+#: dialect/preferences.ui:87
+msgid "Show Translations in Desktop Search"
+msgstr "デスクトップサーチに翻訳を表示する"
+
+#: dialect/preferences.ui:88
+msgid "Warning: All desktop searches will be sent to the translation service"
+msgstr "ご注意 デスクトップ検索はすべて翻訳サービスに送信されます"
+
+#: dialect/preferences.ui:95
+msgid "Translation Shortcut"
+msgstr "翻訳実行のショートカットキー"
+
+#: dialect/preferences.ui:96
+msgid "The unselected choice will be used for line break."
+msgstr "選択されなかったキー組み合わせは改行入力になります。"
+
+#: dialect/preferences.ui:114
+msgid "Default to Auto"
+msgstr "自動判別をデフォルトにする"
+
+#: dialect/preferences.ui:115
+msgid "Use \"Auto\" as the default language"
+msgstr "”自動判別\" をデフォルトの翻訳元言語にする"
+
+#: dialect/preferences.ui:122
+msgid "Appearance"
+msgstr "外観"
+
+#: dialect/preferences.ui:125
+msgid "Use Custom Font Size"
+msgstr ""
+
+#: dialect/preferences.ui:126
+msgid "System font size is used otherwise."
+msgstr ""
+
+#: dialect/preferences.ui:132
+#, fuzzy
+msgid "Default Font Size"
+msgstr "自動判別をデフォルトにする"
+
+#: dialect/preferences.ui:133
+msgid "Changing the size via shortcuts does not overwrite this."
+msgstr ""
+
+#: dialect/shortcuts.blp:13
+msgctxt "shortcuts window"
+msgid "Translator"
+msgstr "翻訳"
+
+#: dialect/shortcuts.blp:16
+msgctxt "shortcuts window"
+msgid "Translate"
+msgstr "翻訳"
+
+#: dialect/shortcuts.blp:21
+msgctxt "shortcuts window"
+msgid "Switch Languages"
+msgstr "言語の切り替え"
+
+#: dialect/shortcuts.blp:26
+#, fuzzy
+msgctxt "shortcuts window"
+msgid "Select source language"
+msgstr "言語を切り替える"
+
+#: dialect/shortcuts.blp:31
+msgctxt "shortcuts window"
+msgid "Select destination language"
+msgstr ""
+
+#: dialect/shortcuts.blp:36
+msgctxt "shortcuts window"
+msgid "Clear source text"
+msgstr "翻訳元テキストをクリア"
+
+#: dialect/shortcuts.blp:41
+msgctxt "shortcuts window"
+msgid "Copy translation"
+msgstr "翻訳結果をコピー"
+
+#: dialect/shortcuts.blp:46
+msgctxt "shortcuts window"
+msgid "Show Pronunciation"
+msgstr "発音を表示"
+
+#: dialect/shortcuts.blp:51
+msgctxt "shortcuts window"
+msgid "Increase font size"
+msgstr ""
+
+#: dialect/shortcuts.blp:56
+msgctxt "shortcuts window"
+msgid "Decrease font size"
+msgstr ""
+
+#: dialect/shortcuts.blp:62
+msgctxt "shortcuts window"
+msgid "Text-to-Speech"
+msgstr "Text-to-Speech"
+
+#: dialect/shortcuts.blp:65
+msgctxt "shortcuts window"
+msgid "Listen to source text"
+msgstr "翻訳元テキストを聞く"
+
+#: dialect/shortcuts.blp:70
+msgctxt "shortcuts window"
+msgid "Listen to translation"
+msgstr "翻訳結果を聞く"
+
+#: dialect/shortcuts.blp:76
+msgctxt "shortcuts window"
+msgid "Navigation"
+msgstr "操作"
+
+#: dialect/shortcuts.blp:79
+msgctxt "shortcuts window"
+msgid "Go back in history"
+msgstr "前の履歴"
+
+#: dialect/shortcuts.blp:84
+msgctxt "shortcuts window"
+msgid "Go forward in history"
+msgstr "次の履歴"
+
+#: dialect/shortcuts.blp:90
+msgctxt "shortcuts window"
+msgid "General"
+msgstr "一般"
+
+#: dialect/shortcuts.blp:93
+msgctxt "shortcuts window"
+msgid "Preferences"
+msgstr "設定"
+
+#: dialect/shortcuts.blp:98
+msgctxt "shortcut window"
+msgid "Shortcuts"
+msgstr "ショートカット"
+
+#: dialect/shortcuts.blp:103
+msgctxt "shortcuts window"
+msgid "Quit"
+msgstr "終了"
+
+#: dialect/window.blp:15
+msgid "Show Pronunciation"
+msgstr "発音を表示"
+
+#: dialect/window.blp:24 dialect/window.py:1203
+msgid "Preferences"
+msgstr "設定"
+
+#: dialect/window.blp:29
+msgid "Keyboard Shortcuts"
+msgstr "ショートカットキー"
+
+#: dialect/window.blp:34
+msgid "About Dialect"
+msgstr "Dialect について"
+
+#: dialect/window.blp:72 dialect/widgets/speech_button.py:40
+msgid "Loading…"
+msgstr "読み込み中…"
+
+#: dialect/window.blp:94 dialect/window.py:903 dialect/window.py:1187
+#: dialect/window.py:1195 dialect/window.py:1211
+msgid "Retry"
+msgstr "リトライ"
+
+#: dialect/window.blp:105 dialect/window.blp:146
+msgid "Open Preferences"
+msgstr "設定を開く"
+
+#: dialect/window.blp:135
+msgid "Remove Key and Retry"
+msgstr "キーを取り除いて再実行"
+
+#: dialect/window.blp:241
+msgid "Main Menu"
+msgstr ""
+
+#: dialect/window.blp:250
+#, fuzzy
+msgid "Previous Translation"
+msgstr "前の翻訳結果"
+
+#: dialect/window.blp:258
+#, fuzzy
+msgid "Next Translation"
+msgstr "次の翻訳結果"
+
+#: dialect/window.blp:270
+msgid "Change Source Language"
+msgstr ""
+
+#: dialect/window.blp:275
+#, fuzzy
+msgid "Switch Languages"
+msgstr "言語の切り替え"
+
+#: dialect/window.blp:282
+msgid "Change Destination Language"
+msgstr ""
+
+#: dialect/window.blp:380
+msgid "Clear"
+msgstr "クリア"
+
+#: dialect/window.blp:386
+msgid "Paste"
+msgstr "貼り付け"
+
+#: dialect/window.blp:392 dialect/window.blp:510
+#: dialect/widgets/speech_button.blp:5 dialect/widgets/speech_button.py:22
+msgid "Listen"
+msgstr "発音を聞く"
+
+#: dialect/window.blp:413
+msgid "Translate"
+msgstr "翻訳"
+
+#: dialect/window.blp:484
+msgid "Translating…"
+msgstr "翻訳中です…"
+
+#: dialect/window.blp:489
+#, fuzzy
+msgid "Could not Translate the Text"
+msgstr "翻訳できません"
+
+#: dialect/window.blp:496 dialect/search_provider/search_provider.in:245
+msgid "Copy"
+msgstr "コピー"
+
+#: dialect/window.blp:504
+#, fuzzy
+msgid "Suggest Translation"
+msgstr "ライブ翻訳"
+
+#: dialect/window.blp:528
+msgid "Cancel"
+msgstr "取消"
+
+#: dialect/window.blp:535
+msgid "Save"
+msgstr "保存"
+
+#: dialect/window.py:399
+msgid "Couldn’t connect to the translation service"
+msgstr "翻訳サービスに接続できません"
+
+#: dialect/window.py:400
+msgid "We can’t connect to the server. Please check for network issues."
+msgstr "翻訳に失敗しました。ネットワーク接続を確認してください。"
+
+#: dialect/window.py:425 dialect/search_provider/search_provider.in:172
+msgid "Failed loading the translation service"
+msgstr "翻訳サービスの読み込みに失敗しました"
+
+#: dialect/window.py:426
+msgid "Please report this in the Dialect bug tracker if the issue persists."
+msgstr "問題が解消されない場合はDIalectバグトラッカーに報告してください。"
+
+#: dialect/window.py:444 dialect/window.py:1201
+#: dialect/search_provider/search_provider.in:192
+msgid "API key is required to use the service"
+msgstr "サービスの利用にはAPIキーが必要です"
+
+#: dialect/window.py:445
+msgid "Please set an API key in the preferences."
+msgstr "設定画面でAPIキーを設定してください。"
+
+#: dialect/window.py:448 dialect/window.py:1193
+#: dialect/search_provider/search_provider.in:190
+msgid "The provided API key is invalid"
+msgstr "指定されたAPIキーが無効です"
+
+#: dialect/window.py:450
+msgid "Please set a valid API key in the preferences."
+msgstr "設定画面で有効なAPIキーを指定してください。"
+
+#: dialect/window.py:453
+msgid "Please set a valid API key or unset the API key in the preferences."
+msgstr "設定画面で正しいAPIキーを設定するか、APIキーを削除してください。"
+
+#: dialect/window.py:495
+#, fuzzy
+msgid "Failed loading the text-to-speech service. Retry?"
+msgstr "翻訳サービスの読み込みに失敗しました"
+
+#: dialect/window.py:496
+#, fuzzy
+msgid "Failed loading the text-to-speech service"
+msgstr "翻訳サービスの読み込みに失敗しました"
+
+#: dialect/window.py:498
+#, fuzzy
+msgid "Failed loading the text-to-speech service, check for network issues"
+msgstr "翻訳に失敗しました。ネットワーク接続を確認してください。"
+
+#: dialect/window.py:542
+#, fuzzy
+msgid "Couldn’t read selection clip board!"
+msgstr "翻訳結果をコピー"
+
+#: dialect/window.py:630
+msgid "Did you mean: "
+msgstr "もしかして : "
+
+#: dialect/window.py:793
+#, fuzzy
+msgid "Copied to clipboard"
+msgstr "翻訳結果をコピー"
+
+#: dialect/window.py:824
+msgid "New translation has been suggested!"
+msgstr "新しい翻訳が提案されました！"
+
+#: dialect/window.py:826 dialect/window.py:830
+msgid "Suggestion failed."
+msgstr "サジェストに失敗しました。"
+
+#: dialect/window.py:894
+#, fuzzy
+msgid "Text-to-Speech failed"
+msgstr "Text-to-Speech"
+
+#: dialect/window.py:898
+#, fuzzy
+msgid "Text-to-Speech failed, check for network issues"
+msgstr "翻訳に失敗しました。ネットワーク接続を確認してください"
+
+#: dialect/window.py:907
+#, fuzzy
+msgid "Text-to-Speech failed. Retry?"
+msgstr "Text-to-Speech"
+
+#: dialect/window.py:971
+msgid "{} characters limit reached!"
+msgstr "{} 文字の制限に達しました！"
+
+#: dialect/window.py:1185 dialect/search_provider/search_provider.in:188
+msgid "Translation failed, check for network issues"
+msgstr "翻訳に失敗しました。ネットワーク接続を確認してください"
+
+#: dialect/window.py:1209 dialect/search_provider/search_provider.in:194
+msgid "Translation failed"
+msgstr "翻訳に失敗しました"
+
+#: dialect/widgets/lang_selector.blp:47
+msgid "Search Languages…"
+msgstr "言語を検索…"
+
+#: dialect/widgets/provider_preferences.blp:5
+#: dialect/widgets/provider_preferences.blp:12
+#, fuzzy
+msgid "Provider Preferences"
+msgstr "設定を開く"
+
+#: dialect/widgets/provider_preferences.blp:21
+msgid "Instance URL"
+msgstr ""
+
+#: dialect/widgets/provider_preferences.blp:22
+#, fuzzy
+msgid "Enter an Instance URL for the Provider."
+msgstr "翻訳サービスのAPIキーを入力します。"
+
+#: dialect/widgets/provider_preferences.blp:32
+#: dialect/widgets/provider_preferences.blp:62
+#, fuzzy
+msgid "Reset to Default"
+msgstr "既定値にリセット"
+
+#: dialect/widgets/provider_preferences.blp:52
+msgid "API Key"
+msgstr "APIキー"
+
+#: dialect/widgets/provider_preferences.blp:53
+#, fuzzy
+msgid "Enter an API Key for the Provider."
+msgstr "翻訳サービスのAPIキーを入力します。"
+
+#: dialect/widgets/provider_preferences.blp:83
+msgid "Character Usage"
+msgstr ""
+
+#: dialect/widgets/speech_button.py:28
+#, fuzzy
+msgid "Cancel Audio"
+msgstr "取消"
+
+#: dialect/widgets/theme_switcher.blp:20
+#, fuzzy
+msgid "Follow System Style"
+msgstr "システム設定に従う"
+
+#: dialect/widgets/theme_switcher.blp:35
+#, fuzzy
+msgid "Light Style"
+msgstr "ライトモード"
+
+#: dialect/widgets/theme_switcher.blp:50
+#, fuzzy
+msgid "Dark Style"
+msgstr "ダークモード"
+
+#: dialect/search_provider/search_provider.in:201
+msgid "Translate “{text}” with {provider_name}"
+msgstr ""
+
+#: dialect/search_provider/search_provider.in:246
+#, fuzzy
+msgid "Copy translation to clipboard"
+msgstr "翻訳結果をコピー"
+
+#, fuzzy
+#~ msgid "A network issue has occurred. Retry?"
+#~ msgstr "ネットワーク接続で問題が発生しました。リトライしますか？"
+
+#, fuzzy
+#~ msgid "A network issue has occurred. Please try again."
+#~ msgstr "ネットワーク接続で問題が発生しました。再度お試しください。"
+
+#~ msgid "translate;translation;"
+#~ msgstr "翻訳元;翻訳先;"
+
+#~ msgid "Afrikaans"
+#~ msgstr "アフリカーンス語"
+
+#~ msgid "Albanian"
+#~ msgstr "アルバニア語"
+
+#~ msgid "Amharic"
+#~ msgstr "アムハラ語"
+
+#~ msgid "Arabic"
+#~ msgstr "アラビア語"
+
+#~ msgid "Armenian"
+#~ msgstr "アルメニア語"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "アゼルバイジャン語"
+
+#~ msgid "Basque"
+#~ msgstr "バスク語"
+
+#~ msgid "Belarusian"
+#~ msgstr "ベラルーシ語"
+
+#~ msgid "Bengali"
+#~ msgstr "ベンガル語"
+
+#~ msgid "Bosnian"
+#~ msgstr "ボスニア語"
+
+#~ msgid "Bulgarian"
+#~ msgstr "ブルガリア語"
+
+#~ msgid "Catalan"
+#~ msgstr "カタロニア語"
+
+#~ msgid "Cebuano"
+#~ msgstr "セブアノ語"
+
+#~ msgid "Chichewa"
+#~ msgstr "チェワ語"
+
+#~ msgid "Chinese"
+#~ msgstr "中国語"
+
+#~ msgid "Chinese (Simplified)"
+#~ msgstr "中国語（簡体字）"
+
+#~ msgid "Chinese (Traditional)"
+#~ msgstr "中国語（繁体字）"
+
+#~ msgid "Corsican"
+#~ msgstr "コルシカ語"
+
+#~ msgid "Croatian"
+#~ msgstr "クロアチア語"
+
+#~ msgid "Czech"
+#~ msgstr "チェコ語"
+
+#~ msgid "Danish"
+#~ msgstr "デンマーク語"
+
+#~ msgid "Dutch"
+#~ msgstr "オランダ語"
+
+#~ msgid "English"
+#~ msgstr "英語"
+
+#~ msgid "Esperanto"
+#~ msgstr "エスペラント語"
+
+#~ msgid "Estonian"
+#~ msgstr "エストニア語"
+
+#~ msgid "Filipino"
+#~ msgstr "フィリピン語"
+
+#~ msgid "Finnish"
+#~ msgstr "フィンランド語"
+
+#~ msgid "French"
+#~ msgstr "フランス語"
+
+#~ msgid "Frisian"
+#~ msgstr "フリジア語"
+
+#~ msgid "Galician"
+#~ msgstr "ガリシア語"
+
+#~ msgid "Georgian"
+#~ msgstr "ジョージア（グルジア）語"
+
+#~ msgid "German"
+#~ msgstr "ドイツ語"
+
+#~ msgid "Greek"
+#~ msgstr "ギリシャ語"
+
+#~ msgid "Gujarati"
+#~ msgstr "グジャラート語"
+
+#~ msgid "Haitian Creole"
+#~ msgstr "ハイチ語"
+
+#~ msgid "Hausa"
+#~ msgstr "ハウサ語"
+
+#~ msgid "Hawaiian"
+#~ msgstr "ハワイ語"
+
+#~ msgid "Hebrew"
+#~ msgstr "ヘブライ語"
+
+#~ msgid "Hindi"
+#~ msgstr "ヒンディー語"
+
+#~ msgid "Hmong"
+#~ msgstr "モン語"
+
+#~ msgid "Hungarian"
+#~ msgstr "ハンガリー語"
+
+#~ msgid "Icelandic"
+#~ msgstr "アイスランド語"
+
+#~ msgid "Igbo"
+#~ msgstr "イボ語"
+
+#~ msgid "Indonesian"
+#~ msgstr "インドネシア語"
+
+#~ msgid "Irish"
+#~ msgstr "アイルランド語"
+
+#~ msgid "Italian"
+#~ msgstr "イタリア語"
+
+#~ msgid "Japanese"
+#~ msgstr "日本語"
+
+#~ msgid "Javanese"
+#~ msgstr "ジャワ語"
+
+#~ msgid "Kannada"
+#~ msgstr "カンナダ語"
+
+#~ msgid "Kazakh"
+#~ msgstr "カザフ語"
+
+#~ msgid "Khmer"
+#~ msgstr "クメール語"
+
+#~ msgid "Kinyarwanda"
+#~ msgstr "ルワンダ語"
+
+#~ msgid "Korean"
+#~ msgstr "韓国語"
+
+#~ msgid "Kurdish (Kurmanji)"
+#~ msgstr "クルド語"
+
+#~ msgid "Kyrgyz"
+#~ msgstr "キルギス語"
+
+#~ msgid "Lao"
+#~ msgstr "ラオ語"
+
+#~ msgid "Latin"
+#~ msgstr "ラテン語"
+
+#~ msgid "Latvian"
+#~ msgstr "ラトビア語"
+
+#~ msgid "Lithuanian"
+#~ msgstr "リトアニア語"
+
+#~ msgid "Luxembourgish"
+#~ msgstr "ルクセンブルク語"
+
+#~ msgid "Macedonian"
+#~ msgstr "マケドニア語"
+
+#~ msgid "Malagasy"
+#~ msgstr "マダガスカル語"
+
+#~ msgid "Malay"
+#~ msgstr "マレー語"
+
+#~ msgid "Malayalam"
+#~ msgstr "マラヤーラム語"
+
+#~ msgid "Maltese"
+#~ msgstr "マルタ語"
+
+#~ msgid "Maori"
+#~ msgstr "マオリ語"
+
+#~ msgid "Marathi"
+#~ msgstr "マラーティー語"
+
+#~ msgid "Mongolian"
+#~ msgstr "モンゴル語"
+
+#~ msgid "Myanmar (Burmese)"
+#~ msgstr "ミャンマー（ビルマ）語"
+
+#~ msgid "Nepali"
+#~ msgstr "ネパール語"
+
+#~ msgid "Norwegian"
+#~ msgstr "ノルウェー語"
+
+#~ msgid "Odia (Oriya)"
+#~ msgstr "オリヤ語"
+
+#~ msgid "Pashto"
+#~ msgstr "パシュト語"
+
+#~ msgid "Persian"
+#~ msgstr "ペルシャ語"
+
+#~ msgid "Polish"
+#~ msgstr "ポーランド語"
+
+#~ msgid "Portuguese"
+#~ msgstr "ポルトガル語"
+
+#~ msgid "Punjabi"
+#~ msgstr "パンジャブ語"
+
+#~ msgid "Romanian"
+#~ msgstr "ルーマニア語"
+
+#~ msgid "Russian"
+#~ msgstr "ロシア語"
+
+#~ msgid "Samoan"
+#~ msgstr "サモア語"
+
+#~ msgid "Scots Gaelic"
+#~ msgstr "スコットランド ゲール語"
+
+#~ msgid "Serbian"
+#~ msgstr "セルビア語"
+
+#~ msgid "Sesotho"
+#~ msgstr "ソト語"
+
+#~ msgid "Shona"
+#~ msgstr "ショナ語"
+
+#~ msgid "Sindhi"
+#~ msgstr "シンディ語"
+
+#~ msgid "Sinhala"
+#~ msgstr "シンハラ語"
+
+#~ msgid "Slovak"
+#~ msgstr "スロバキア語"
+
+#~ msgid "Slovenian"
+#~ msgstr "スロベニア語"
+
+#~ msgid "Somali"
+#~ msgstr "ソマリ語"
+
+#~ msgid "Spanish"
+#~ msgstr "スペイン語"
+
+#~ msgid "Sundanese"
+#~ msgstr "スンダ語"
+
+#~ msgid "Swahili"
+#~ msgstr "スワヒリ語"
+
+#~ msgid "Swedish"
+#~ msgstr "スウェーデン語"
+
+#~ msgid "Tajik"
+#~ msgstr "タジク語"
+
+#~ msgid "Tamil"
+#~ msgstr "タミル語"
+
+#~ msgid "Tatar"
+#~ msgstr "タタール語"
+
+#~ msgid "Telugu"
+#~ msgstr "テルグ語"
+
+#~ msgid "Thai"
+#~ msgstr "タイ語"
+
+#~ msgid "Turkish"
+#~ msgstr "トルコ語"
+
+#~ msgid "Turkmen"
+#~ msgstr "トルクメン語"
+
+#~ msgid "Ukrainian"
+#~ msgstr "ウクライナ語"
+
+#~ msgid "Urdu"
+#~ msgstr "ウルドゥ語"
+
+#~ msgid "Uyghur"
+#~ msgstr "ウイグル語"
+
+#~ msgid "Uzbek"
+#~ msgstr "ウズベク語"
+
+#~ msgid "Vietnamese"
+#~ msgstr "ベトナム語"
+
+#~ msgid "Welsh"
+#~ msgstr "ウェールズ語"
+
+#~ msgid "Xhosa"
+#~ msgstr "コサ語"
+
+#~ msgid "Yiddish"
+#~ msgstr "イディッシュ語"
+
+#~ msgid "Yoruba"
+#~ msgstr "ヨルバ語"
+
+#~ msgid "Zulu"
+#~ msgstr "ズールー語"
+
+#~ msgid "GitHub page"
+#~ msgstr "GitHub ページ"
+
+#~ msgid "Translator Instance"
+#~ msgstr "Translator インスタンス"
+
+#~ msgid "Enter a translation service URL."
+#~ msgstr "翻訳サービスの URL を指定します。"
+
+#~ msgid "Edit"
+#~ msgstr "編集"
+
+#~ msgid "Use Google for TTS."
+#~ msgstr "TTS に Google を使用します。"
+
+#, python-brace-format
+#~ msgid "Not a valid {backend} instance"
+#~ msgstr "無効な {backend} インスタンス"
+
+#, python-brace-format
+#~ msgid "Not a valid {backend} API key"
+#~ msgstr "無効な {backend} APIキー"
+
+#, python-brace-format
+#~ msgid ""
+#~ "Failed loading \"{url}\", check if the instance address is correct or "
+#~ "report in the Dialect bug tracker if the issue persists."
+#~ msgstr ""
+#~ "\"{url}\"の読み込みに失敗しました。インスタンスのアドレスが正しいか確認"
+#~ "し、問題が解消されない場合はDialectバグトラッカーに報告してください。"
+
+#, python-brace-format
+#~ msgid ""
+#~ "We can’t connect to the {service} instance \"{url}\".\n"
+#~ " Please check for network issues or if the address is correct."
+#~ msgstr ""
+#~ "{service}インスタンス \"{url}\" に接続できません。\n"
+#~ " ネットワーク接続またはアドレスが正しいか確認してください。"
+
+#~ msgid ""
+#~ "To reduce API abuse, the GNOME search provider in Dialect is turned off "
+#~ "when Live translation is. Ensure the search provider is also turned on in "
+#~ "the GNOME Settings."
+#~ msgstr ""
+#~ "ライブ翻訳が有効な場合、API の乱用を避けるために Dialect は GNOME 検索で無"
+#~ "効になります。GNOME 設定で検索プロバイダが有効になっていることを確認してく"
+#~ "ださい。"
+
+#~ msgid "No network connection detected."
+#~ msgstr "ネットワークに接続されていません。"

@@ -1,0 +1,955 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dialect package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dialect\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-18 08:35-0500\n"
+"PO-Revision-Date: 2023-01-26 23:54+0000\n"
+"Last-Translator: ⵣⵓⵀⵉⵔ ⴰⵎⴰⵣⵉⵖ ZOUHIR DEHBI <zouhirdehbi56@gmail.com>\n"
+"Language-Team: Tamazight (Standard Moroccan) <https://hosted.weblate.org/"
+"projects/dialect/dialect/zgh/>\n"
+"Language: zgh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.16-dev\n"
+
+#. Translators: Do not translate the app name!
+#: data/app.drey.Dialect.desktop.in.in:8
+#: data/app.drey.Dialect.metainfo.xml.in.in:6 dialect/main.py:78
+msgid "Dialect"
+msgstr "Dialect"
+
+#: data/app.drey.Dialect.desktop.in.in:9
+#: data/app.drey.Dialect.metainfo.xml.in.in:7
+msgid "Translate between languages"
+msgstr "ⴰⵙⵓⵖⵍ ⵏⴳⵔ ⵜⵓⵜⵍⴰⵢⵉⵏ"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/app.drey.Dialect.desktop.in.in:13
+msgid ""
+"translate;translation;Google Translate;LibreTranslate;Lingva Translate;Bing "
+"Microsoft Translator;Bing Translator;Microsoft Translator;Yandex Translate; "
+msgstr ""
+
+#. For development version
+#: data/app.drey.Dialect.metainfo.xml.in.in:9 dialect/main.py:187
+msgid "A translation app for GNOME."
+msgstr "ⵜⵉⵙⵏⵙⵉ ⵏ ⵓⵙⵓⵖⵍ GNOME."
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:12
+msgid "Features:"
+msgstr "ⵜⵉⵎⵥⵍⴰⵢ:"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:16
+msgid "Translation based on Google Translate"
+msgstr "ⴰⵙⵓⵖⵍ ⵉⵜⵜⵄⵡⵡⴰⵍ ⵅⴼ ⵜⵙⵓⵖⵍⵜ ⵏ ⴳⵓⴳⵍ"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:17
+msgid ""
+"Translation based on the LibreTranslate API, allowing you to use any public "
+"instance"
+msgstr ""
+"ⴰⵙⵓⵖⵍ ⵉⴱⴷⴷⵏ ⵅⴼ LibreTranslate, ⵏⵏⴰ ⴰⴽ ⵉⵜⵜⴰⵊⵊⴰⵏ ⴰⴷ ⵜⵙⵎⵔⵙ ⴽⵔⴰ ⵓⵙⵔⵜⵓ ⴰⵎⴰⵜⴰⵢ"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:18
+msgid "Translation based on Lingva Translate API"
+msgstr "ⴰⵙⵓⵖⵍ ⵉⴱⴷⴷⵏ ⵅⴼ Lingva Translate"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:19
+#, fuzzy
+msgid "Translation based on Bing"
+msgstr "ⴰⵙⵓⵖⵍ ⵉⴱⴷⴷⵏ ⵅⴼ Lingva Translate"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:20
+#, fuzzy
+msgid "Translation based on Yandex"
+msgstr "ⴰⵙⵓⵖⵍ ⵉⵜⵜⵄⵡⵡⴰⵍ ⵅⴼ ⵜⵙⵓⵖⵍⵜ ⵏ ⴳⵓⴳⵍ"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:21
+#, fuzzy
+msgid "Translation based on DeepL"
+msgstr "ⴰⵙⵓⵖⵍ ⵉⵜⵜⵄⵡⵡⴰⵍ ⵅⴼ ⵜⵙⵓⵖⵍⵜ ⵏ ⴳⵓⴳⵍ"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:22
+msgid "Text to speech"
+msgstr "ⴰⴹⵕⵉⵚ ⵉⵙⵙⴰⵡⴰⵍⵏ"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:23
+msgid "Translation history"
+msgstr "ⴰⵎⵣⵔⵓⵢ ⵏ ⵓⵙⵓⵖⵍ"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:24
+msgid "Automatic language detection"
+msgstr "ⴰⵥⵍⴰⵢ ⴰⵡⵓⵔⵎⴰⵏ ⵏ ⵜⵓⵜⵍⴰⵢⵜ"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:25
+msgid "Clipboard buttons"
+msgstr "ⵜⵉⴳⵎⵎⵓⵜⵉⵏ ⵏ ⵜⵣⵣⵏⴱⵉⵍⵜ"
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/app.drey.Dialect.metainfo.xml.in.in:35
+#: data/app.drey.Dialect.metainfo.xml.in.in:37
+msgid "The Dialect Authors"
+msgstr "ⵉⵎⴳⴰⵢⵏ ⵏ Dialect"
+
+#: dialect/languages.py:63 dialect/widgets/lang_selector.py:84
+msgid "Auto"
+msgstr "ⴰⵡⵓⵔⵎⴰⵏ"
+
+#: dialect/main.py:188
+#, fuzzy
+msgid "Copyright 2020–⁠2024 The Dialect Authors"
+msgstr "ⵉⵣⵔⴼⴰⵏ ⵏ ⵜⵥⵕⵉⴳⵜ 2020-2022 ⵉⵎⴳⴰⵢⵏ ⵏ Dialect"
+
+#: dialect/main.py:190
+msgid "translator-credits"
+msgstr "Zouhir Dehbi <zouhirdehbi56@gmail.com>"
+
+#: dialect/main.py:191
+msgid "Donate"
+msgstr ""
+
+#: dialect/preferences.py:132
+msgid "Edit Provider Settings"
+msgstr ""
+
+#: dialect/preferences.py:134
+msgid "No Settings for This Provider"
+msgstr ""
+
+#: dialect/preferences.ui:8
+msgid "Providers"
+msgstr ""
+
+#: dialect/preferences.ui:11
+msgid "Translator"
+msgstr "ⴰⵎⵙⵙⵓⵖⵍ"
+
+#: dialect/preferences.ui:12
+msgid "Choose from the available translation services."
+msgstr "ⵙⵜⵉ ⵙⴳ ⵜⵏⵓⴼⴰ ⵏ ⵓⵙⵓⵖⵍ ⵉⵍⵍⴰⵏ."
+
+#: dialect/preferences.ui:43
+msgid "Text-to-Speech"
+msgstr "ⴰⴹⵕⵉⵚ ⵉⵙⵙⴰⵡⴰⵍⵏ"
+
+#: dialect/preferences.ui:44
+#, fuzzy
+msgid "Choose from the available TTS services."
+msgstr "ⵙⵜⵉ ⵙⴳ ⵜⵏⵓⴼⴰ ⵏ ⵓⵙⵓⵖⵍ ⵉⵍⵍⴰⵏ."
+
+#: dialect/preferences.ui:77
+msgid "Behavior"
+msgstr "ⵜⵉⵎⵙⴽⵔⵜ"
+
+#: dialect/preferences.ui:80
+msgid "Live Translation"
+msgstr "ⴰⵙⵓⵖⵍ ⵓⵙⵔⵉⴷ"
+
+#: dialect/preferences.ui:81
+msgid "Warning: Your IP address may get banned for API abuse."
+msgstr "ⴰⵙⵎⵉⴳⵍ: ⵉⵥⴹⴰⵕ ⴰⴷ ⵉⵜⵜⵡⴰⴽⴽⵙ ⴰⵏⵙⴰ ⵏ IP ⵏⵏⴽ ⵙ ⵜⵎⵏⵜⵉⵍⵜ ⵏ ⴳⴰⵔ ⴰⵙⵎⵔⵙ ⵏ API."
+
+#: dialect/preferences.ui:87
+msgid "Show Translations in Desktop Search"
+msgstr "ⵎⵍ ⵜⴰⵙⵓⵖⵍⵜ ⴳ ⵓⵔⵣⵓ ⴳ ⵓⵙⵉⵔⴰ"
+
+#: dialect/preferences.ui:88
+msgid "Warning: All desktop searches will be sent to the translation service"
+msgstr "ⴰⵙⵎⵉⴳⵍ: ⵔⴰⴷ ⵜⵜⵓⵙⵙⵉⴼⴹⵏ ⵎⴰⵕⵕⴰ ⵉⵔⵣⵣⵓⵜⵏ ⴳ ⵓⵙⵉⵔⴰ ⵖⵔ ⵜⵏⴰⴼⵓⵜ ⵏ ⵓⵙⵓⵖⵍ"
+
+#: dialect/preferences.ui:95
+msgid "Translation Shortcut"
+msgstr "ⴰⵙⴰⵏⴼ ⵏ ⵓⵙⵓⵖⵍ"
+
+#: dialect/preferences.ui:96
+msgid "The unselected choice will be used for line break."
+msgstr "ⵔⴰⴷ ⵉⵜⵜⵓⵙⵎⵔⵙ ⵓⵙⵜⴰⵢ ⵏⵏⴰ ⵓⵔ ⵉⵜⵜⴰⵡⵙⵜⴰⵢⵏ ⵉ ⵜⵕⵥⵉ ⵏ ⵢⵉⴼⵉⵍⵉ."
+
+#: dialect/preferences.ui:114
+msgid "Default to Auto"
+msgstr "ⴰⵎⵔⴷⵓ ⴷ ⵓⵡⵓⵔⵎⴰⵏ"
+
+#: dialect/preferences.ui:115
+msgid "Use \"Auto\" as the default language"
+msgstr "ⵙⵎⵔⵙ \"ⴰⵡⵓⵔⵎⴰⵏ\" ⴰⵎ ⵜⵓⵜⵍⴰⵢⵜ ⵜⴰⵎⵔⴷⵓⵜ"
+
+#: dialect/preferences.ui:122
+msgid "Appearance"
+msgstr ""
+
+#: dialect/preferences.ui:125
+msgid "Use Custom Font Size"
+msgstr ""
+
+#: dialect/preferences.ui:126
+msgid "System font size is used otherwise."
+msgstr ""
+
+#: dialect/preferences.ui:132
+#, fuzzy
+msgid "Default Font Size"
+msgstr "ⴰⵎⵔⴷⵓ ⴷ ⵓⵡⵓⵔⵎⴰⵏ"
+
+#: dialect/preferences.ui:133
+msgid "Changing the size via shortcuts does not overwrite this."
+msgstr ""
+
+#: dialect/shortcuts.blp:13
+msgctxt "shortcuts window"
+msgid "Translator"
+msgstr "ⴰⵎⵙⵙⵓⵖⵍ"
+
+#: dialect/shortcuts.blp:16
+msgctxt "shortcuts window"
+msgid "Translate"
+msgstr "ⵙⵙⵓⵖⵍ"
+
+#: dialect/shortcuts.blp:21
+msgctxt "shortcuts window"
+msgid "Switch Languages"
+msgstr "ⵙⵏⴼⵍ ⵜⵓⵜⵍⴰⵢⵜ"
+
+#: dialect/shortcuts.blp:26
+#, fuzzy
+msgctxt "shortcuts window"
+msgid "Select source language"
+msgstr "ⵙⵏⴼⵍ ⵜⵓⵜⵍⴰⵢⵉⵏ"
+
+#: dialect/shortcuts.blp:31
+msgctxt "shortcuts window"
+msgid "Select destination language"
+msgstr ""
+
+#: dialect/shortcuts.blp:36
+msgctxt "shortcuts window"
+msgid "Clear source text"
+msgstr "ⴽⴽⵙ ⴰⴹⵕⵉⵚ ⵏ ⵓⵙⴰⴳⵎ"
+
+#: dialect/shortcuts.blp:41
+msgctxt "shortcuts window"
+msgid "Copy translation"
+msgstr "ⵙⵙⵏⵖⵍ ⵜⴰⵙⵓⵖⵍⵜ"
+
+#: dialect/shortcuts.blp:46
+msgctxt "shortcuts window"
+msgid "Show Pronunciation"
+msgstr "ⵎⵍ ⴰⵡⴰⵍ"
+
+#: dialect/shortcuts.blp:51
+msgctxt "shortcuts window"
+msgid "Increase font size"
+msgstr ""
+
+#: dialect/shortcuts.blp:56
+msgctxt "shortcuts window"
+msgid "Decrease font size"
+msgstr ""
+
+#: dialect/shortcuts.blp:62
+msgctxt "shortcuts window"
+msgid "Text-to-Speech"
+msgstr "ⴰⴹⵕⵉⵚ ⵉⵙⵙⴰⵡⴰⵍⵏ"
+
+#: dialect/shortcuts.blp:65
+msgctxt "shortcuts window"
+msgid "Listen to source text"
+msgstr "ⵙⵍⵍ ⵉ ⵓⴹⵕⵉⵚ ⵏ ⵓⵙⴰⴳⵎ"
+
+#: dialect/shortcuts.blp:70
+msgctxt "shortcuts window"
+msgid "Listen to translation"
+msgstr "ⵙⵍⵍ ⵉ ⵜⵙⵓⵖⵍⵜ"
+
+#: dialect/shortcuts.blp:76
+msgctxt "shortcuts window"
+msgid "Navigation"
+msgstr "ⴰⵎⵓⵜⵜⵉ"
+
+#: dialect/shortcuts.blp:79
+msgctxt "shortcuts window"
+msgid "Go back in history"
+msgstr "ⴰⵖⵓⵍ ⵖⵔ ⵓⵎⵣⵔⵓⵢ"
+
+#: dialect/shortcuts.blp:84
+msgctxt "shortcuts window"
+msgid "Go forward in history"
+msgstr "ⵎⵓⵏ ⴷ ⵓⵎⵣⵔⵓⵢ"
+
+#: dialect/shortcuts.blp:90
+msgctxt "shortcuts window"
+msgid "General"
+msgstr "ⴰⵎⴰⵜⴰⵢ"
+
+#: dialect/shortcuts.blp:93
+msgctxt "shortcuts window"
+msgid "Preferences"
+msgstr "ⵉⵙⵎⵢⴰⴼⵓⵜⵏ"
+
+#: dialect/shortcuts.blp:98
+msgctxt "shortcut window"
+msgid "Shortcuts"
+msgstr "ⵉⵙⵓⵏⴰⴼ"
+
+#: dialect/shortcuts.blp:103
+msgctxt "shortcuts window"
+msgid "Quit"
+msgstr "ⴼⴼⵖ"
+
+#: dialect/window.blp:15
+msgid "Show Pronunciation"
+msgstr "ⵎⵍ ⴰⵎⴰⵡⴰⵍ"
+
+#: dialect/window.blp:24 dialect/window.py:1203
+msgid "Preferences"
+msgstr "ⵉⵙⵎⵢⴰⴼⵓⵜⵏ"
+
+#: dialect/window.blp:29
+msgid "Keyboard Shortcuts"
+msgstr "ⵉⵙⵓⵏⴰⴼ ⵏ ⵜⵏⴰⵙⵜ"
+
+#: dialect/window.blp:34
+msgid "About Dialect"
+msgstr "ⵅⴼ Dialect"
+
+#: dialect/window.blp:72 dialect/widgets/speech_button.py:40
+msgid "Loading…"
+msgstr "ⴰⴽⵜⵓⵔ…"
+
+#: dialect/window.blp:94 dialect/window.py:903 dialect/window.py:1187
+#: dialect/window.py:1195 dialect/window.py:1211
+msgid "Retry"
+msgstr "ⴰⵍⵙ"
+
+#: dialect/window.blp:105 dialect/window.blp:146
+msgid "Open Preferences"
+msgstr "ⵕⵥⵎ ⵉⵙⵎⵢⴰⴼⵓⵜⵏ"
+
+#: dialect/window.blp:135
+msgid "Remove Key and Retry"
+msgstr "ⴽⴽⵙ ⵜⴰⵙⴰⵔⵓⵜ ⵜⴰⵍⵙⴷ"
+
+#: dialect/window.blp:241
+msgid "Main Menu"
+msgstr ""
+
+#: dialect/window.blp:250
+#, fuzzy
+msgid "Previous Translation"
+msgstr "ⵜⴰⵙⵓⵖⵍⵜ ⵜⴰⵎⵣⵡⴰⵔⵓⵜ"
+
+#: dialect/window.blp:258
+#, fuzzy
+msgid "Next Translation"
+msgstr "ⵜⴰⵙⵓⵖⵍⵜ ⵜⴰⵎⴹⴼⴰⵕⵜ"
+
+#: dialect/window.blp:270
+msgid "Change Source Language"
+msgstr ""
+
+#: dialect/window.blp:275
+#, fuzzy
+msgid "Switch Languages"
+msgstr "ⵙⵏⴼⵍ ⵜⵓⵜⵍⴰⵢⵜ"
+
+#: dialect/window.blp:282
+msgid "Change Destination Language"
+msgstr ""
+
+#: dialect/window.blp:380
+msgid "Clear"
+msgstr "ⴽⴽⵙ"
+
+#: dialect/window.blp:386
+msgid "Paste"
+msgstr "ⵙⵍⵖ"
+
+#: dialect/window.blp:392 dialect/window.blp:510
+#: dialect/widgets/speech_button.blp:5 dialect/widgets/speech_button.py:22
+msgid "Listen"
+msgstr "ⵙⵍⵍ"
+
+#: dialect/window.blp:413
+msgid "Translate"
+msgstr "ⵙⵙⵓⵖⵍ"
+
+#: dialect/window.blp:484
+msgid "Translating…"
+msgstr "ⴰⵙⵓⵖⵍ…"
+
+#: dialect/window.blp:489
+#, fuzzy
+msgid "Could not Translate the Text"
+msgstr "ⵓⵔ ⵉⵣⵔⵉ ⵓⵙⵓⵖⵍ ⵏ ⵓⴹⵕⵉⵚ ⴰⴷ"
+
+#: dialect/window.blp:496 dialect/search_provider/search_provider.in:245
+msgid "Copy"
+msgstr "ⵙⵙⵏⵖⵍ"
+
+#: dialect/window.blp:504
+msgid "Suggest Translation"
+msgstr "ⵙⵙⵓⵎⵔ ⴽⵔⴰ ⵏ ⵜⵙⵓⵖⵍⵜ"
+
+#: dialect/window.blp:528
+msgid "Cancel"
+msgstr "ⵙⵔⵔ"
+
+#: dialect/window.blp:535
+msgid "Save"
+msgstr "ⵃⴹⵓ"
+
+#: dialect/window.py:399
+msgid "Couldn’t connect to the translation service"
+msgstr "ⵜⴰⵣⴳⵍⵜ ⵏ ⵡⴰⵡⴰⴹ ⵖⵔ ⵜⵏⴰⴼⵓⵜ ⵏ ⵓⵙⵓⵖⵍ"
+
+#: dialect/window.py:400
+msgid "We can’t connect to the server. Please check for network issues."
+msgstr "ⵓⵔ ⵏⵣⵎⵔ ⴰⴷ ⵏⴰⵡⴹ ⵖⵔ ⵓⵎⴰⴽⴽⴰⵢ, ⵙⵙⵉⴷⴻⴷ ⵜⵉⵎⵓⴽⵔⵉⵙⵉⵏ ⵏ ⵓⵥⵟⵟⴰ."
+
+#: dialect/window.py:425 dialect/search_provider/search_provider.in:172
+msgid "Failed loading the translation service"
+msgstr "ⴰⵣⴳⴰⵍ ⴳ ⵡⴰⴳⴰⵎ ⵏ ⵜⵏⴰⴼⵓⵜ ⵏ ⵓⵙⵓⵖⵍ"
+
+#: dialect/window.py:426
+msgid "Please report this in the Dialect bug tracker if the issue persists."
+msgstr "ⵙⵏⵖⵎⵙ ⵙ ⵓⵢⵏⵏⴰ ⴳ ⵓⵎⴹⴼⴰⵕ ⵏ ⵜⵣⴳⴰⵍⵉⵏ ⵏ Dialect ⵎⵛ ⵜⵙⵓⵍ ⵜⵎⵓⴽⵔⵉⵙⵜ ⴰⴷ."
+
+#: dialect/window.py:444 dialect/window.py:1201
+#: dialect/search_provider/search_provider.in:192
+msgid "API key is required to use the service"
+msgstr "ⵜⴳⴰ ⵜⵙⴰⵔⵓⵜ ⵏ API ⵜⵓⵛⵛⵉⵍⵜ ⵉ ⵓⵙⵎⵔⵙ ⵏ ⵜⵏⴰⴼⵓⵜ"
+
+#: dialect/window.py:445
+msgid "Please set an API key in the preferences."
+msgstr "ⵉⵅⵚⵚⴰ ⵓⵙⵎⴰⵔ ⵏ ⵜⵙⴰⵔⵓⵜ ⵏ API ⴳ ⵉⵙⵎⵢⴰⴼⵓⵜⵏ."
+
+#: dialect/window.py:448 dialect/window.py:1193
+#: dialect/search_provider/search_provider.in:190
+msgid "The provided API key is invalid"
+msgstr "ⵜⴰⵙⴰⵔⵓⵜ ⵏ API ⵉⵎⵎⵓⵛⵏ ⵓⵔ ⵜⵎⵙⴰⵙⴰ"
+
+#: dialect/window.py:450
+msgid "Please set a valid API key in the preferences."
+msgstr "ⵉⵅⵚⵚⴰ ⵓⵙⴽⴰⵔ ⵏ ⵜⵙⴰⵔⵓⵜ ⵏ API ⵉⵎⵙⴰⵙⴰⵏ ⴳ ⵉⵙⵎⵢⴰⴼⵓⵜⵏ."
+
+#: dialect/window.py:453
+msgid "Please set a valid API key or unset the API key in the preferences."
+msgstr ""
+"ⵉⵅⵚⵚⴰ ⵓⵙⵎⴰⵔ ⵏ ⵜⵙⴰⵔⵓⵜ ⵏ API ⵉⵎⵙⴰⵙⴰⵏ ⴷ ⵜⵓⴽⴽⵙⴰ ⵏ ⵜⵙⴰⵔⵓⵜ ⵏ API ⴳ ⵉⵙⵎⵢⴰⴼⵓⵜⵏ."
+
+#: dialect/window.py:495
+#, fuzzy
+msgid "Failed loading the text-to-speech service. Retry?"
+msgstr "ⴰⵣⴳⴰⵍ ⴳ ⵡⴰⴳⴰⵎ ⵏ ⵜⵏⴰⴼⵓⵜ ⵏ ⵓⵙⵓⵖⵍ"
+
+#: dialect/window.py:496
+#, fuzzy
+msgid "Failed loading the text-to-speech service"
+msgstr "ⴰⵣⴳⴰⵍ ⴳ ⵡⴰⴳⴰⵎ ⵏ ⵜⵏⴰⴼⵓⵜ ⵏ ⵓⵙⵓⵖⵍ"
+
+#: dialect/window.py:498
+#, fuzzy
+msgid "Failed loading the text-to-speech service, check for network issues"
+msgstr "ⵓⵔ ⵏⵣⵎⵔ ⴰⴷ ⵏⴰⵡⴹ ⵖⵔ ⵓⵎⴰⴽⴽⴰⵢ, ⵙⵙⵉⴷⴻⴷ ⵜⵉⵎⵓⴽⵔⵉⵙⵉⵏ ⵏ ⵓⵥⵟⵟⴰ."
+
+#: dialect/window.py:542
+#, fuzzy
+msgid "Couldn’t read selection clip board!"
+msgstr "ⵙⵙⵏⵖⵍ ⵜⴰⵙⵓⵖⵍⵜ"
+
+#: dialect/window.py:630
+msgid "Did you mean: "
+msgstr "ⵉⵙ ⵜⵔⵉⴷ ⴰⴷ ⵜⵉⵏⵉⴷ: "
+
+#: dialect/window.py:793
+#, fuzzy
+msgid "Copied to clipboard"
+msgstr "ⵙⵙⵏⵖⵍ ⵜⴰⵙⵓⵖⵍⵜ"
+
+#: dialect/window.py:824
+msgid "New translation has been suggested!"
+msgstr "ⵜⴻⵜⵜⵓⵙⵙⵓⵎⵔ ⵢⴰⵜ ⵜⵙⵓⵖⵍⵜ ⵜⴰⵎⴰⵢⵏⵓⵜ!"
+
+#: dialect/window.py:826 dialect/window.py:830
+msgid "Suggestion failed."
+msgstr "ⵉⵜⵜⵡⴰⵣⴳⵍ ⵓⵙⵓⵎⵔ."
+
+#: dialect/window.py:894
+#, fuzzy
+msgid "Text-to-Speech failed"
+msgstr "ⴰⴹⵕⵉⵚ ⵉⵙⵙⴰⵡⴰⵍⵏ"
+
+#: dialect/window.py:898
+#, fuzzy
+msgid "Text-to-Speech failed, check for network issues"
+msgstr "ⵉⵜⵜⵡⴰⵣⴳ ⵓⵙⵓⵖⵍ, ⵙⵙⵉⴷⴻⴷ ⵜⵉⵎⵓⴽⵔⵉⵙⵉⵏ ⵏ ⵓⵥⵟⵟⴰ"
+
+#: dialect/window.py:907
+#, fuzzy
+msgid "Text-to-Speech failed. Retry?"
+msgstr "ⴰⴹⵕⵉⵚ ⵉⵙⵙⴰⵡⴰⵍⵏ"
+
+#: dialect/window.py:971
+msgid "{} characters limit reached!"
+msgstr "ⵉⵜⵜⵡⴰⵡⴹ ⵓⵡⵜⵜⵓ ⵏ {} ⵏ ⵓⵙⴽⴽⵉⵍ!"
+
+#: dialect/window.py:1185 dialect/search_provider/search_provider.in:188
+msgid "Translation failed, check for network issues"
+msgstr "ⵉⵜⵜⵡⴰⵣⴳ ⵓⵙⵓⵖⵍ, ⵙⵙⵉⴷⴻⴷ ⵜⵉⵎⵓⴽⵔⵉⵙⵉⵏ ⵏ ⵓⵥⵟⵟⴰ"
+
+#: dialect/window.py:1209 dialect/search_provider/search_provider.in:194
+msgid "Translation failed"
+msgstr "ⵉⵜⵜⵡⴰⵣⴳⵍ ⵓⵙⵓⵖⵍ"
+
+#: dialect/widgets/lang_selector.blp:47
+msgid "Search Languages…"
+msgstr "ⴰⵔⵣⵣⵓ ⵏ ⵜⵓⵜⵍⴰⵢⵉⵏ…"
+
+#: dialect/widgets/provider_preferences.blp:5
+#: dialect/widgets/provider_preferences.blp:12
+#, fuzzy
+msgid "Provider Preferences"
+msgstr "ⵕⵥⵎ ⵉⵙⵎⵢⴰⴼⵓⵜⵏ"
+
+#: dialect/widgets/provider_preferences.blp:21
+msgid "Instance URL"
+msgstr ""
+
+#: dialect/widgets/provider_preferences.blp:22
+#, fuzzy
+msgid "Enter an Instance URL for the Provider."
+msgstr "ⵙⵙⵉⴷⴼ ⵜⴰⵙⴰⵔⵓⵜ ⵏ API ⵉ ⵜⵏⴰⴼⵓⵜ ⵏ ⵓⵙⵓⵖⵍ."
+
+#: dialect/widgets/provider_preferences.blp:32
+#: dialect/widgets/provider_preferences.blp:62
+#, fuzzy
+msgid "Reset to Default"
+msgstr "ⴰⵍⴰⵙ ⵖⵔ ⵓⵎⵔⴷⵓ"
+
+#: dialect/widgets/provider_preferences.blp:52
+msgid "API Key"
+msgstr "ⵜⴰⵙⴰⵔⵓⵜ ⵏ API"
+
+#: dialect/widgets/provider_preferences.blp:53
+#, fuzzy
+msgid "Enter an API Key for the Provider."
+msgstr "ⵙⵙⵉⴷⴼ ⵜⴰⵙⴰⵔⵓⵜ ⵏ API ⵉ ⵜⵏⴰⴼⵓⵜ ⵏ ⵓⵙⵓⵖⵍ."
+
+#: dialect/widgets/provider_preferences.blp:83
+msgid "Character Usage"
+msgstr ""
+
+#: dialect/widgets/speech_button.py:28
+#, fuzzy
+msgid "Cancel Audio"
+msgstr "ⵙⵔⵔ"
+
+#: dialect/widgets/theme_switcher.blp:20
+#, fuzzy
+msgid "Follow System Style"
+msgstr "ⴹⴼⵕ ⴰⵏⴳⵔⴰⵡ"
+
+#: dialect/widgets/theme_switcher.blp:35
+#, fuzzy
+msgid "Light Style"
+msgstr "ⴰⵙⵔⵜⵓ ⴰⵏⴰⴼⴰⵡ"
+
+#: dialect/widgets/theme_switcher.blp:50
+#, fuzzy
+msgid "Dark Style"
+msgstr "ⴰⵙⵔⵜⵓ ⴰⴷⵖⵎⵓⵎ"
+
+#: dialect/search_provider/search_provider.in:201
+msgid "Translate “{text}” with {provider_name}"
+msgstr ""
+
+#: dialect/search_provider/search_provider.in:246
+#, fuzzy
+msgid "Copy translation to clipboard"
+msgstr "ⵙⵙⵏⵖⵍ ⵜⴰⵙⵓⵖⵍⵜ"
+
+#, fuzzy
+#~ msgid "A network issue has occurred. Retry?"
+#~ msgstr "ⵜⵍⵍⴰ ⴽⵔⴰ ⵜⵎⵓⴽⵔⵉⵙⵜ ⴳ ⵓⵥⵟⵟⴰ. ⴰⵍⵙ?"
+
+#, fuzzy
+#~ msgid "A network issue has occurred. Please try again."
+#~ msgstr "ⵜⵍⵍⴰ ⴽⵔⴰ ⵜⵎⵓⴽⵔⵉⵙⵜ ⴳ ⵓⵥⵟⵟⴰ. ⴰⵍⵙ ⴷⴰⵖ."
+
+#~ msgid "translate;translation;"
+#~ msgstr "ⵙⵙⵓⵖⵍ;ⴰⵙⵓⵖⵍ;"
+
+#~ msgid "Afrikaans"
+#~ msgstr "ⵜⴰⴼⵔⵉⵇⴰⵏⵉⵜ"
+
+#~ msgid "Albanian"
+#~ msgstr "ⵜⴰⵍⴱⴰⵏⵉⵜ"
+
+#~ msgid "Amharic"
+#~ msgstr "ⵜⴰⵎⵀⴰⵔⵉⵜ"
+
+#~ msgid "Arabic"
+#~ msgstr "ⵜⴰⵄⵔⴰⴱⵜ"
+
+#~ msgid "Armenian"
+#~ msgstr "ⵜⴰⵕⵎⵉⵏⵉⵜ"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "ⵜⴰⵣⵔⵉⴱⵉⴷⵊⴰⵏⵉⵜ"
+
+#~ msgid "Basque"
+#~ msgstr "ⵜⴰⴱⴰⵚⴽⵉⵜ"
+
+#~ msgid "Belarusian"
+#~ msgstr "ⵜⴰⴱⵉⵍⴰⵔⵓⵙⵜ"
+
+#~ msgid "Bengali"
+#~ msgstr "ⵜⴰⴱⵏⵖⴰⵍⵉⵜ"
+
+#~ msgid "Bosnian"
+#~ msgstr "ⵜⴰⴱⵓⵙⵏⵢⴰⵏⵉⵜ"
+
+#~ msgid "Bulgarian"
+#~ msgstr "ⵜⴰⴱⵍⵖⴰⵔⵉⵜ"
+
+#~ msgid "Catalan"
+#~ msgstr "ⵜⴰⴽⴰⵟⴰⵍⴰⵏⵉⵜ"
+
+#~ msgid "Cebuano"
+#~ msgstr "ⵜⴰⵙⵉⴱⵡⴰⵏⵉⵜ"
+
+#~ msgid "Chichewa"
+#~ msgstr "ⵜⴰⵛⵉⵛⵡⴰⵏⵉⵜ"
+
+#~ msgid "Chinese"
+#~ msgstr "ⵜⴰⵛⵉⵏⵡⵉⵜ"
+
+#~ msgid "Chinese (Simplified)"
+#~ msgstr "ⵜⴰⵛⵉⵏⵡⵉⵜ (ⵜⴰⴼⵔⴰⵔⵜ)"
+
+#~ msgid "Chinese (Traditional)"
+#~ msgstr "ⵜⴰⵛⵉⵏⵡⵉⵜ (ⵜⴰⵣⴰⵢⴽⵓⵜ)"
+
+#~ msgid "Corsican"
+#~ msgstr "ⵜⴰⴽⵓⵔⵙⵉⴽⴰⵏⵉⵜ"
+
+#~ msgid "Croatian"
+#~ msgstr "ⵜⴰⴽⵔⵡⴰⵜⵉⵜ"
+
+#~ msgid "Czech"
+#~ msgstr "ⵜⴰⵜⵛⵉⴽⵉⵜ"
+
+#~ msgid "Danish"
+#~ msgstr "ⵜⴰⴷⴰⵏⵎⴰⵔⴽⵉⵜ"
+
+#~ msgid "Dutch"
+#~ msgstr "ⵜⴰⵀⵓⵍⴰⵏⴷⵉⵜ"
+
+#~ msgid "English"
+#~ msgstr "ⵜⴰⵏⴳⵍⵉⵣⵜ"
+
+#~ msgid "Esperanto"
+#~ msgstr "ⵜⵉⵙⴱⵉⵔⵢⴰⵏⵜⵓⵜ"
+
+#~ msgid "Estonian"
+#~ msgstr "ⵜⵉⵙⵜⵓⵏⵢⴰⵏⵉⵜ"
+
+#~ msgid "Filipino"
+#~ msgstr "ⵜⴰⴼⵉⵍⵉⴱⵉⵏⵉⵜ"
+
+#~ msgid "Finnish"
+#~ msgstr "ⵜⴰⴼⵉⵏⵍⴰⵏⴷⵉⵜ"
+
+#~ msgid "French"
+#~ msgstr "ⵜⴰⴼⵔⴰⵏⵙⵉⵙⵜ"
+
+#~ msgid "Frisian"
+#~ msgstr "ⵜⴰⴼⵔⵉⵙⵉⵏⵜ"
+
+#~ msgid "Galician"
+#~ msgstr "ⵜⴰⵊⴰⵍⵉⴽⵉⵜ"
+
+#~ msgid "Georgian"
+#~ msgstr "ⵜⴰⵊⵢⵓⵕⵊⵉⵜ"
+
+#~ msgid "German"
+#~ msgstr "ⵜⴰⵍⵉⵎⴰⵏⵜ"
+
+#~ msgid "Greek"
+#~ msgstr "ⵜⴰⴳⵔⵉⴳⵉⵜ"
+
+#~ msgid "Gujarati"
+#~ msgstr "ⵜⴰⴳⵓⵊⴰⵔⴰⵜⵉⵜ"
+
+#~ msgid "Haitian Creole"
+#~ msgstr "ⵜⴰⵀⴰⵢⵜⵉⵜ ⵜⴰⴳⵔⵢⵓⵍⵉⵜ"
+
+#~ msgid "Hausa"
+#~ msgstr "ⵜⴰⵀⴰⵡⵙⴰⵜ"
+
+#~ msgid "Hawaiian"
+#~ msgstr "ⵜⴰⵀⴰⵡⴰⵢⵜ"
+
+#~ msgid "Hebrew"
+#~ msgstr "ⵜⴰⵄⵉⴱⵔⵉⵜ"
+
+#~ msgid "Hindi"
+#~ msgstr "ⵜⴰⵀⵉⵏⴷⵉⵜ"
+
+#~ msgid "Hmong"
+#~ msgstr "ⵜⴰⵀⵓⵎⵓⵏⴳⵉⵜ"
+
+#~ msgid "Hungarian"
+#~ msgstr "ⵜⴰⵀⵏⵖⴰⵔⵉⵜ"
+
+#~ msgid "Icelandic"
+#~ msgstr "ⵜⵉⵙⵍⴰⵏⴷⵉⵜ"
+
+#~ msgid "Igbo"
+#~ msgstr "ⵜⵉⴳⴱⵓⵜ"
+
+#~ msgid "Indonesian"
+#~ msgstr "ⵜⴰⵏⴷⵓⵏⵉⵙⵉⵜ"
+
+#~ msgid "Irish"
+#~ msgstr "ⵜⵉⵔⵉⵛⵉⵜ"
+
+#~ msgid "Italian"
+#~ msgstr "ⵜⴰⵟⴰⵍⵢⴰⵏⵜ"
+
+#~ msgid "Japanese"
+#~ msgstr "ⵜⴰⵊⴰⴱⴱⵓⵏⵉⵜ"
+
+#~ msgid "Javanese"
+#~ msgstr "ⵜⴰⵊⴰⴼⴰⵏⵉⵜ"
+
+#~ msgid "Kannada"
+#~ msgstr "ⵜⴰⴽⴰⵏⴰⴷⵉⵜ"
+
+#~ msgid "Kazakh"
+#~ msgstr "ⵜⴰⴽⴰⵣⴰⵅⵉⵜ"
+
+#~ msgid "Khmer"
+#~ msgstr "ⵜⴰⵅⵎⵉⵔⵜ"
+
+#~ msgid "Kinyarwanda"
+#~ msgstr "ⵜⴰⵔⵓⵡⴰⵏⴷⵉⵜ"
+
+#~ msgid "Korean"
+#~ msgstr "ⵜⴰⴽⵓⵔⵉⵜ"
+
+#~ msgid "Kurdish (Kurmanji)"
+#~ msgstr "ⵜⴰⴽⵓⵔⴷⵉⵜ (ⴽⵓⵔⵎⴰⵏⵊⵉ"
+
+#~ msgid "Kyrgyz"
+#~ msgstr "ⵜⴰⴽⵉⵔⴳⵉⵣⵉⵜ"
+
+#~ msgid "Lao"
+#~ msgstr "ⵜⴰⵍⴰⵡⵉⵜ"
+
+#~ msgid "Latin"
+#~ msgstr "ⵜⴰⵍⴰⵜⵉⵏⵉⵜ"
+
+#~ msgid "Latvian"
+#~ msgstr "ⵜⴰⵍⴰⵜⴼⵢⴰⵏⵉⵜ"
+
+#~ msgid "Lithuanian"
+#~ msgstr "ⵜⴰⵍⵉⵜⵡⴰⵏⵉⵜ"
+
+#~ msgid "Luxembourgish"
+#~ msgstr "ⵜⴰⵍⵓⴽⵙⵓⵎⴱⵓⵔⴽⵜ"
+
+#~ msgid "Macedonian"
+#~ msgstr "ⵜⴰⵎⴰⵇⴷⵓⵏⵉⵜ"
+
+#~ msgid "Malagasy"
+#~ msgstr "ⵜⴰⵎⴰⵍⴳⴰⵛⵉⵜ"
+
+#~ msgid "Malay"
+#~ msgstr "ⵜⴰⵎⴰⵍⴰⵡⵉⵜ"
+
+#~ msgid "Malayalam"
+#~ msgstr "ⵜⴰⵎⴰⵍⴰⵢⴰⵍⴰⵎⵉⵜ"
+
+#~ msgid "Maltese"
+#~ msgstr "ⵜⴰⵎⴰⵍⵟⵉⵜ"
+
+#~ msgid "Maori"
+#~ msgstr "ⵜⴰⵎⴰⵡⵔⵉⵜ"
+
+#~ msgid "Marathi"
+#~ msgstr "ⵜⴰⵎⴰⵔⴰⵜⵉⵜ"
+
+#~ msgid "Mongolian"
+#~ msgstr "ⵜⴰⵎⵓⵏⴳⵓⵍⵉⵜ"
+
+#~ msgid "Myanmar (Burmese)"
+#~ msgstr "ⵜⴰⴱⵉⵔⵎⴰⵏⵉⵜ"
+
+#~ msgid "Nepali"
+#~ msgstr "ⵜⴰⵏⵉⴱⴰⵍⵉⵜ"
+
+#~ msgid "Norwegian"
+#~ msgstr "ⵜⴰⵏⵕⵡⵉⵊⵉⵜ"
+
+#~ msgid "Odia (Oriya)"
+#~ msgstr "ⵜⵓⴷⵢⴰⵢⵜ (ⵜⵓⵔⵢⴰⵢⵜ)"
+
+#~ msgid "Pashto"
+#~ msgstr "ⵜⴰⴱⴰⵛⵜⵓⵜ"
+
+#~ msgid "Persian"
+#~ msgstr "ⵜⴰⴼⵓⵔⵙⵉⵜ"
+
+#~ msgid "Polish"
+#~ msgstr "ⵜⴰⴱⵓⵍⵓⵏⵉⵜ"
+
+#~ msgid "Portuguese"
+#~ msgstr "ⵜⴰⴱⵕⵟⵇⵉⵣⵜ"
+
+#~ msgid "Punjabi"
+#~ msgstr "ⵜⴰⴱⵏⵊⴰⴱⵉⵜ"
+
+#~ msgid "Romanian"
+#~ msgstr "ⵜⴰⵔⵓⵎⴰⵏⵉⵜ"
+
+#~ msgid "Russian"
+#~ msgstr "ⵜⴰⵔⵓⵙⵉⵜ"
+
+#~ msgid "Samoan"
+#~ msgstr "ⵜⴰⵙⴰⵎⵡⴰⵏⵉⵜ"
+
+#~ msgid "Scots Gaelic"
+#~ msgstr "ⵜⴰⵙⴽⵓⵜⵍⴰⵏⴷⵉⵜ ⵜⴰⴳⵉⵍⵉⵜ"
+
+#~ msgid "Serbian"
+#~ msgstr "ⵜⴰⵚⵉⵕⴱⵉⵜ"
+
+#~ msgid "Sesotho"
+#~ msgstr "ⵜⴰⵙⵓⵙⵓⵜ"
+
+#~ msgid "Shona"
+#~ msgstr "ⵜⴰⵛⵓⵏⵉⵜ"
+
+#~ msgid "Sindhi"
+#~ msgstr "ⵜⴰⵙⵉⵏⴷⵉⵜ"
+
+#~ msgid "Sinhala"
+#~ msgstr "ⵜⴰⵙⵉⵏⵀⴰⵍⵉⵜ"
+
+#~ msgid "Slovak"
+#~ msgstr "ⵜⴰⵙⵍⵓⴼⴰⴽⵉⵜ"
+
+#~ msgid "Slovenian"
+#~ msgstr "ⵜⴰⵙⵍⵓⴼⵉⵏⵉⵜ"
+
+#~ msgid "Somali"
+#~ msgstr "ⵜⴰⵙⵓⵎⴰⵍⵉⵜ"
+
+#~ msgid "Spanish"
+#~ msgstr "ⵜⴰⵙⴱⵏⵢⵓⵍⵉⵜ"
+
+#~ msgid "Sundanese"
+#~ msgstr "ⵜⴰⵙⵓⵏⴷⴰⵏⵉⵜ"
+
+#~ msgid "Swahili"
+#~ msgstr "ⵜⴰⵙⵡⴰⵃⵉⵍⵉⵜ"
+
+#~ msgid "Swedish"
+#~ msgstr "ⵜⴰⵙⵡⵉⴷⵉⵜ"
+
+#~ msgid "Tajik"
+#~ msgstr "ⵜⴰⵟⴰⵊⵉⴽⵉⵜ"
+
+#~ msgid "Tamil"
+#~ msgstr "ⵜⴰⵜⴰⵎⵉⵍⵜ"
+
+#~ msgid "Tatar"
+#~ msgstr "ⵜⴰⵜⴰⵔⵉⵜ"
+
+#~ msgid "Telugu"
+#~ msgstr "ⵜⴰⵜⵉⵍⴳⵓⵜ"
+
+#~ msgid "Thai"
+#~ msgstr "ⵜⴰⵜⴰⵢⵍⴰⵏⴷⵉⵜ"
+
+#~ msgid "Turkish"
+#~ msgstr "ⵜⴰⵜⵓⵔⴽⵉⵜ"
+
+#~ msgid "Turkmen"
+#~ msgstr "ⵜⴰⵜⵓⵔⴽⵎⴰⵏⵉⵜ"
+
+#~ msgid "Ukrainian"
+#~ msgstr "ⵜⵓⴽⵔⴰⵏⵉⵜ"
+
+#~ msgid "Urdu"
+#~ msgstr "ⵜⵓⵔⴷⵓⵜ"
+
+#~ msgid "Uyghur"
+#~ msgstr "ⵜⵓⵢⴳⵓⵔⵉⵜ"
+
+#~ msgid "Uzbek"
+#~ msgstr "ⵜⵓⵥⴱⵉⴽⵉⵜ"
+
+#~ msgid "Vietnamese"
+#~ msgstr "ⵜⴰⴱⵉⵜⵏⴰⵎⵉⵜ"
+
+#~ msgid "Welsh"
+#~ msgstr "ⵜⴰⵡⵉⵍⵛⵉⵜ"
+
+#~ msgid "Xhosa"
+#~ msgstr "ⵜⴰⵅⵓⵙⴰⵢⵜ"
+
+#~ msgid "Yiddish"
+#~ msgstr "ⵜⴰⵢⵉⴷⴷⵉⵛⵉⵜ"
+
+#~ msgid "Yoruba"
+#~ msgstr "ⵜⴰⵢⵔⵓⴱⴰⵜ"
+
+#~ msgid "Zulu"
+#~ msgstr "ⵜⴰⵣⵓⵍⵓⵜ"
+
+#~ msgid "GitHub page"
+#~ msgstr "ⵜⴰⵙⵏⴰ ⵏ GitHub"
+
+#~ msgid "Translator Instance"
+#~ msgstr "ⴰⵙⵔⵓⵙ ⵏ ⵓⵎⵙⵙⵓⵖⵍ"
+
+#~ msgid "Enter a translation service URL."
+#~ msgstr "ⵙⵙⵉⴷⴼ URL ⵉ ⵜⵏⴰⴼⵓⵜ ⵏ ⵓⵙⵓⵖⵍ."
+
+#~ msgid "Edit"
+#~ msgstr "ⵙⴳⴳⴷ"
+
+#~ msgid "Use Google for TTS."
+#~ msgstr "ⵙⵎⵔⵙ Google ⵉ TTS."
+
+#, python-brace-format
+#~ msgid "Not a valid {backend} instance"
+#~ msgstr "ⴰⵙⵔⵜⵓ ⵏ {backend} ⵓⵔ ⵉⵎⵙⴰⵙⴰ"
+
+#, python-brace-format
+#~ msgid "Not a valid {backend} API key"
+#~ msgstr "ⵜⴰⵙⴰⵔⵓⵜ ⵏ {backend} API ⵓⵔ ⵜⵎⵙⴰⵙⴰ"
+
+#, python-brace-format
+#~ msgid ""
+#~ "Failed loading \"{url}\", check if the instance address is correct or "
+#~ "report in the Dialect bug tracker if the issue persists."
+#~ msgstr ""
+#~ "ⵜⴰⵣⴳⵍⵜ ⵏ ⵡⴰⴳⴰⵎ ⵏ \"{url}\", ⵙⵙⵉⴷⴻⴷ ⴰⵏⵙⴰ ⵏ ⵜⵎⵀⵍⵜ ⵉⵙ ⴷ ⵜⵉⵎⵉⴷⵉⵜ ⵏⵉⵖ ⵙⵏⵖⵎⵙ ⴳ "
+#~ "ⵓⵎⴹⴼⴰⵕ ⵏ ⵜⵣⴳⴰⵍⵉⵏ ⵏ Dialect ⵎⵛ ⵜⵙⵓⵍ ⵜⵎⵓⴽⵔⵉⵙⵜ."
+
+#, python-brace-format
+#~ msgid ""
+#~ "We can’t connect to the {service} instance \"{url}\".\n"
+#~ " Please check for network issues or if the address is correct."
+#~ msgstr ""
+#~ "ⵓⵔ ⵏⵣⵎⵔ ⴰⴷ ⵏⵎⵢⴰⵡⴰⴹ ⴷ ⵜⵎⵀⵍⵜ ⵏ {service} ⴳ {url}\".\n"
+#~ " ⵙⵙⵉⴷⴻⴷ ⵜⵉⵎⵓⴽⵔⵉⵙⵉⵏ ⵏ ⵓⵥⵟⵟⴰ ⵏⵉⵖ ⴰⵏⵙⴰ ⵉⵙ ⴷ ⵉⵎⵉⴷⵉ."

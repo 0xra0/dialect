@@ -1,0 +1,948 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dialect package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dialect\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-18 08:35-0500\n"
+"PO-Revision-Date: 2026-02-21 12:09+0000\n"
+"Last-Translator: Muhammed Al-Basha "
+"<mu7basha@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/dialect/dialect/"
+"ar/>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 5.16.1-dev\n"
+
+#. Translators: Do not translate the app name!
+#: data/app.drey.Dialect.desktop.in.in:8
+#: data/app.drey.Dialect.metainfo.xml.in.in:6 dialect/main.py:78
+msgid "Dialect"
+msgstr "دايلكت"
+
+#: data/app.drey.Dialect.desktop.in.in:9
+#: data/app.drey.Dialect.metainfo.xml.in.in:7
+msgid "Translate between languages"
+msgstr "ترجِم بين اللغات"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/app.drey.Dialect.desktop.in.in:13
+msgid ""
+"translate;translation;Google Translate;LibreTranslate;Lingva Translate;Bing "
+"Microsoft Translator;Bing Translator;Microsoft Translator;Yandex Translate; "
+msgstr "ترجم;ترجمة;جوجل;ليبري;لينغفا;مايكروسوفت بينغ;بينغ;مايكروسوفت;ياندكس; "
+
+#. For development version
+#: data/app.drey.Dialect.metainfo.xml.in.in:9 dialect/main.py:187
+msgid "A translation app for GNOME."
+msgstr "تطبيق ترجمة لجنوم."
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:12
+msgid "Features:"
+msgstr "الميزات:"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:16
+msgid "Translation based on Google Translate"
+msgstr "الترجمة بالاعتماد على ترجمة جوجل"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:17
+msgid ""
+"Translation based on the LibreTranslate API, allowing you to use any public "
+"instance"
+msgstr ""
+"الترجمة بالاعتماد على واجهة برمجة تطبيقات ليبرا ترانزليت، مما يتيح استخدام "
+"أي مثيل عام"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:18
+msgid "Translation based on Lingva Translate API"
+msgstr "الترجمة بالاعتماد على واجهة برمجة تطبيقات لينغفا ترانزليت"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:19
+msgid "Translation based on Bing"
+msgstr "الترجمة بالاعتماد على بينغ"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:20
+msgid "Translation based on Yandex"
+msgstr "الترجمة بالاعتماد على ياندكس"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:21
+msgid "Translation based on DeepL"
+msgstr "الترجمة بالاعتماد على ديب‌إل"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:22
+msgid "Text to speech"
+msgstr "نص إلى كلام"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:23
+msgid "Translation history"
+msgstr "تأريخ الترجمة"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:24
+msgid "Automatic language detection"
+msgstr "تحديد آلي للُّغة"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:25
+msgid "Clipboard buttons"
+msgstr "أزرار الحافظة"
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/app.drey.Dialect.metainfo.xml.in.in:35
+#: data/app.drey.Dialect.metainfo.xml.in.in:37
+msgid "The Dialect Authors"
+msgstr "مؤلفو دايلكت"
+
+#: dialect/languages.py:63 dialect/widgets/lang_selector.py:84
+msgid "Auto"
+msgstr "آلي"
+
+#: dialect/main.py:188
+msgid "Copyright 2020–⁠2024 The Dialect Authors"
+msgstr "حقوق النسخ 2020– 2024 مؤلفو دايلكت"
+
+#: dialect/main.py:190
+msgid "translator-credits"
+msgstr ""
+"إبراهيم محمد\n"
+"zefr0x https://github.com/zefr0x\n"
+"أحمد النجماوي <iramosu@protonmail.com>"
+
+#: dialect/main.py:191
+msgid "Donate"
+msgstr "تبرَّع"
+
+#: dialect/preferences.py:132
+msgid "Edit Provider Settings"
+msgstr "حرِّر إعدادات مُوَفِّر خدمة الترجمة"
+
+#: dialect/preferences.py:134
+msgid "No Settings for This Provider"
+msgstr "لا إعدادات لهذا المُوَفِّر"
+
+#: dialect/preferences.ui:8
+msgid "Providers"
+msgstr "موفِّرو خدمة الترجمة"
+
+#: dialect/preferences.ui:11
+msgid "Translator"
+msgstr "المترجِم"
+
+#: dialect/preferences.ui:12
+msgid "Choose from the available translation services."
+msgstr "اختر إحدى خدمات الترجمة المتاحة."
+
+#: dialect/preferences.ui:43
+msgid "Text-to-Speech"
+msgstr "نص إلى كلام"
+
+#: dialect/preferences.ui:44
+msgid "Choose from the available TTS services."
+msgstr "اختر إحدى الخدمات تحويل النص إلى كلام المتاحة."
+
+#: dialect/preferences.ui:77
+msgid "Behavior"
+msgstr "السلوك"
+
+#: dialect/preferences.ui:80
+msgid "Live Translation"
+msgstr "ترجمة مباشرة"
+
+#: dialect/preferences.ui:81
+msgid "Warning: Your IP address may get banned for API abuse."
+msgstr ""
+"تحذير: قد يُحظر عنوانك لبروتوكول الإنترنت (IP) بسبب إساءة استخدام واجهة برمجة "
+"التطبيقات (API)."
+
+#: dialect/preferences.ui:87
+msgid "Show Translations in Desktop Search"
+msgstr "اعرض الترجمات في بحث سطح المكتب"
+
+#: dialect/preferences.ui:88
+msgid "Warning: All desktop searches will be sent to the translation service"
+msgstr "تحذير: سَتُرسل كافَّة عمليات البحث على سطح المكتب إلى خدمة الترجمة"
+
+#: dialect/preferences.ui:95
+msgid "Translation Shortcut"
+msgstr "اختصار الترجمة"
+
+#: dialect/preferences.ui:96
+msgid "The unselected choice will be used for line break."
+msgstr "سَيُستخدم الخيار غير المحدد لإنشاء سطر جديد."
+
+#: dialect/preferences.ui:114
+msgid "Default to Auto"
+msgstr "حدِّد «آلي» مبدئيًا"
+
+#: dialect/preferences.ui:115
+msgid "Use \"Auto\" as the default language"
+msgstr "يستخدم «آلي» كلغة مبدئية"
+
+#: dialect/preferences.ui:122
+msgid "Appearance"
+msgstr "المظهر"
+
+#: dialect/preferences.ui:125
+msgid "Use Custom Font Size"
+msgstr "استخدم حجم خط مخصص"
+
+#: dialect/preferences.ui:126
+msgid "System font size is used otherwise."
+msgstr "حجم خط النظام سَيُستخدم ما لم يُذكر خلاف ذلك."
+
+#: dialect/preferences.ui:132
+msgid "Default Font Size"
+msgstr "حجم الخط المبدئي"
+
+#: dialect/preferences.ui:133
+msgid "Changing the size via shortcuts does not overwrite this."
+msgstr "تغيير الحجم عن طريق الاختصارات مؤقت ولا يغير هذه القيمة."
+
+#: dialect/shortcuts.blp:13
+msgctxt "shortcuts window"
+msgid "Translator"
+msgstr "المترجم"
+
+#: dialect/shortcuts.blp:16
+msgctxt "shortcuts window"
+msgid "Translate"
+msgstr "ترجم"
+
+#: dialect/shortcuts.blp:21
+msgctxt "shortcuts window"
+msgid "Switch Languages"
+msgstr "حوِّل اللغات"
+
+#: dialect/shortcuts.blp:26
+msgctxt "shortcuts window"
+msgid "Select source language"
+msgstr "اختر لغة المصدر"
+
+#: dialect/shortcuts.blp:31
+msgctxt "shortcuts window"
+msgid "Select destination language"
+msgstr "اختر اللغة المستهدفة"
+
+#: dialect/shortcuts.blp:36
+msgctxt "shortcuts window"
+msgid "Clear source text"
+msgstr "امح نص المصدر"
+
+#: dialect/shortcuts.blp:41
+msgctxt "shortcuts window"
+msgid "Copy translation"
+msgstr "انسخ الترجمة"
+
+#: dialect/shortcuts.blp:46
+msgctxt "shortcuts window"
+msgid "Show Pronunciation"
+msgstr "اعرض النطق"
+
+#: dialect/shortcuts.blp:51
+msgctxt "shortcuts window"
+msgid "Increase font size"
+msgstr "زِد حجم الخط"
+
+#: dialect/shortcuts.blp:56
+msgctxt "shortcuts window"
+msgid "Decrease font size"
+msgstr "قلِّص حجم الخط"
+
+#: dialect/shortcuts.blp:62
+msgctxt "shortcuts window"
+msgid "Text-to-Speech"
+msgstr "نص إلى كلام"
+
+#: dialect/shortcuts.blp:65
+msgctxt "shortcuts window"
+msgid "Listen to source text"
+msgstr "استمع إلى نص المصدر"
+
+#: dialect/shortcuts.blp:70
+msgctxt "shortcuts window"
+msgid "Listen to translation"
+msgstr "استمع إلى الترجمة"
+
+#: dialect/shortcuts.blp:76
+msgctxt "shortcuts window"
+msgid "Navigation"
+msgstr "التنقل"
+
+#: dialect/shortcuts.blp:79
+msgctxt "shortcuts window"
+msgid "Go back in history"
+msgstr "عُد بالتأريخ"
+
+#: dialect/shortcuts.blp:84
+msgctxt "shortcuts window"
+msgid "Go forward in history"
+msgstr "تقدَّم بالتأريخ"
+
+#: dialect/shortcuts.blp:90
+msgctxt "shortcuts window"
+msgid "General"
+msgstr "عام"
+
+#: dialect/shortcuts.blp:93
+msgctxt "shortcuts window"
+msgid "Preferences"
+msgstr "التفضيلات"
+
+#: dialect/shortcuts.blp:98
+msgctxt "shortcut window"
+msgid "Shortcuts"
+msgstr "الاختصارات"
+
+#: dialect/shortcuts.blp:103
+msgctxt "shortcuts window"
+msgid "Quit"
+msgstr "اخرج"
+
+#: dialect/window.blp:15
+msgid "Show Pronunciation"
+msgstr "أظهِر النطق"
+
+#: dialect/window.blp:24 dialect/window.py:1203
+msgid "Preferences"
+msgstr "التفضيلات"
+
+#: dialect/window.blp:29
+msgid "Keyboard Shortcuts"
+msgstr "اختصارات لوحة المفاتيح"
+
+#: dialect/window.blp:34
+msgid "About Dialect"
+msgstr "حول دايلكت"
+
+#: dialect/window.blp:72 dialect/widgets/speech_button.py:40
+msgid "Loading…"
+msgstr "يُحَمِّل…"
+
+#: dialect/window.blp:94 dialect/window.py:903 dialect/window.py:1187
+#: dialect/window.py:1195 dialect/window.py:1211
+msgid "Retry"
+msgstr "أعِد المحاولة"
+
+#: dialect/window.blp:105 dialect/window.blp:146
+msgid "Open Preferences"
+msgstr "افتح التفضيلات"
+
+#: dialect/window.blp:135
+msgid "Remove Key and Retry"
+msgstr "أزِل المفتاح وأعِد المحاولة"
+
+#: dialect/window.blp:241
+msgid "Main Menu"
+msgstr "القائمة الرئيسة"
+
+#: dialect/window.blp:250
+msgid "Previous Translation"
+msgstr "الترجمة السابقة"
+
+#: dialect/window.blp:258
+msgid "Next Translation"
+msgstr "الترجمة التالية"
+
+#: dialect/window.blp:270
+msgid "Change Source Language"
+msgstr "غَيِّر لغة المصدر"
+
+#: dialect/window.blp:275
+msgid "Switch Languages"
+msgstr "حوِّل اللغات"
+
+#: dialect/window.blp:282
+msgid "Change Destination Language"
+msgstr "غَيِّر اللغة المستهدفة"
+
+#: dialect/window.blp:380
+msgid "Clear"
+msgstr "امح"
+
+#: dialect/window.blp:386
+msgid "Paste"
+msgstr "ألصِق"
+
+#: dialect/window.blp:392 dialect/window.blp:510
+#: dialect/widgets/speech_button.blp:5 dialect/widgets/speech_button.py:22
+msgid "Listen"
+msgstr "استمع"
+
+#: dialect/window.blp:413
+msgid "Translate"
+msgstr "ترجم"
+
+#: dialect/window.blp:484
+msgid "Translating…"
+msgstr "يُتَرجِم…"
+
+#: dialect/window.blp:489
+msgid "Could not Translate the Text"
+msgstr "تعذَّرت ترجمة النص"
+
+#: dialect/window.blp:496 dialect/search_provider/search_provider.in:245
+msgid "Copy"
+msgstr "انسخ"
+
+#: dialect/window.blp:504
+msgid "Suggest Translation"
+msgstr "اقترح ترجمة"
+
+#: dialect/window.blp:528
+msgid "Cancel"
+msgstr "ألغِ"
+
+#: dialect/window.blp:535
+msgid "Save"
+msgstr "احفظ"
+
+#: dialect/window.py:399
+msgid "Couldn’t connect to the translation service"
+msgstr "تعذَّر الاتصال بخدمة الترجمة"
+
+#: dialect/window.py:400
+msgid "We can’t connect to the server. Please check for network issues."
+msgstr "تعذَّر الاتصال بالخادوم. تحقق من مشاكل الشبكة."
+
+#: dialect/window.py:425 dialect/search_provider/search_provider.in:172
+msgid "Failed loading the translation service"
+msgstr "تعذَّر تحميل خدمة الترجمة"
+
+#: dialect/window.py:426
+msgid "Please report this in the Dialect bug tracker if the issue persists."
+msgstr "أبلغ عن المشكلة في متتبع عِلَّل «دايلكت» إن استمرت."
+
+#: dialect/window.py:444 dialect/window.py:1201
+#: dialect/search_provider/search_provider.in:192
+msgid "API key is required to use the service"
+msgstr "مفتاح واجهة برمجة التطبيقات (API) إلزامي لاستخدام الخدمة"
+
+#: dialect/window.py:445
+msgid "Please set an API key in the preferences."
+msgstr "عَيِّن مفتاح واجهة برمجة التطبيقات (API) في التفضيلات."
+
+#: dialect/window.py:448 dialect/window.py:1193
+#: dialect/search_provider/search_provider.in:190
+msgid "The provided API key is invalid"
+msgstr "مفتاح واجهة برمجة التطبيقات (API) المعطى غير صالح"
+
+#: dialect/window.py:450
+msgid "Please set a valid API key in the preferences."
+msgstr "عَيِّن مفتاح واجهة برمجة تطبيقات (API) صالح في التفضيلات."
+
+#: dialect/window.py:453
+msgid "Please set a valid API key or unset the API key in the preferences."
+msgstr ""
+"عَيِّن مفتاح واجهة برمجة تطبيقات (API) صالح، أو أزل المفتاح من التفضيلات."
+
+#: dialect/window.py:495
+msgid "Failed loading the text-to-speech service. Retry?"
+msgstr "تعذَّر تحميل خدمة النص إلى كلام. أأعيد المحاولة؟"
+
+#: dialect/window.py:496
+msgid "Failed loading the text-to-speech service"
+msgstr "تعذَّر تحميل خدمة النص إلى كلام"
+
+#: dialect/window.py:498
+msgid "Failed loading the text-to-speech service, check for network issues"
+msgstr "تعذَّر تحميل خدمة النص إلى كلام، تحقق من مشاكل الشبكة"
+
+#: dialect/window.py:542
+msgid "Couldn’t read selection clip board!"
+msgstr "تعذَّرت قراءة حافظة التحديد!"
+
+#: dialect/window.py:630
+msgid "Did you mean: "
+msgstr "أتَقصِد: "
+
+#: dialect/window.py:793
+msgid "Copied to clipboard"
+msgstr "نُسِخَت إلى الحافظة"
+
+#: dialect/window.py:824
+msgid "New translation has been suggested!"
+msgstr "اقترحت ترجمة جديدة!"
+
+#: dialect/window.py:826 dialect/window.py:830
+msgid "Suggestion failed."
+msgstr "أخفق الاقتراح."
+
+#: dialect/window.py:894
+msgid "Text-to-Speech failed"
+msgstr "أخفق تحويل النص إلى كلام"
+
+#: dialect/window.py:898
+msgid "Text-to-Speech failed, check for network issues"
+msgstr "تعذَّر تحويل النص إلى كلام، من فضلك تحقق من مشاكل الشبكة"
+
+#: dialect/window.py:907
+msgid "Text-to-Speech failed. Retry?"
+msgstr "تعذَّر تحويل النص إلى كلام. أأعيد المحاولة؟"
+
+#: dialect/window.py:971
+msgid "{} characters limit reached!"
+msgstr "وصلت إلى حد {} حرف!"
+
+#: dialect/window.py:1185 dialect/search_provider/search_provider.in:188
+msgid "Translation failed, check for network issues"
+msgstr "تعذَّرت الترجمة. تحقق من مشاكل الشبكة"
+
+#: dialect/window.py:1209 dialect/search_provider/search_provider.in:194
+msgid "Translation failed"
+msgstr "تعذَّرت الترجمة"
+
+#: dialect/widgets/lang_selector.blp:47
+msgid "Search Languages…"
+msgstr "ابحث عن لغة…"
+
+#: dialect/widgets/provider_preferences.blp:5
+#: dialect/widgets/provider_preferences.blp:12
+msgid "Provider Preferences"
+msgstr "تفضيلات مُوفِّر الخدمة"
+
+#: dialect/widgets/provider_preferences.blp:21
+msgid "Instance URL"
+msgstr "مسار المثيل"
+
+#: dialect/widgets/provider_preferences.blp:22
+msgid "Enter an Instance URL for the Provider."
+msgstr "أدخل مسار مثيل لمُوفِّر الترجمة."
+
+#: dialect/widgets/provider_preferences.blp:32
+#: dialect/widgets/provider_preferences.blp:62
+msgid "Reset to Default"
+msgstr "صَفِّر للمبدئي"
+
+#: dialect/widgets/provider_preferences.blp:52
+msgid "API Key"
+msgstr "مفتاح واجهة برمجة التطبيقات (API)"
+
+#: dialect/widgets/provider_preferences.blp:53
+msgid "Enter an API Key for the Provider."
+msgstr "أدخل مفتاح واجهة برمجة التطبيقات (API) لِمُوَفِّر الترجمة."
+
+#: dialect/widgets/provider_preferences.blp:83
+msgid "Character Usage"
+msgstr "استخدام الحرف"
+
+#: dialect/widgets/speech_button.py:28
+msgid "Cancel Audio"
+msgstr "ألغِ الصوت"
+
+#: dialect/widgets/theme_switcher.blp:20
+msgid "Follow System Style"
+msgstr "اتبع أسلوب النظام"
+
+#: dialect/widgets/theme_switcher.blp:35
+msgid "Light Style"
+msgstr "الأسلوب الفاتح"
+
+#: dialect/widgets/theme_switcher.blp:50
+msgid "Dark Style"
+msgstr "الأسلوب الداكن"
+
+#: dialect/search_provider/search_provider.in:201
+msgid "Translate “{text}” with {provider_name}"
+msgstr "ترجم «{text}» من خلال {provider_name}"
+
+#: dialect/search_provider/search_provider.in:246
+msgid "Copy translation to clipboard"
+msgstr "انسخ الترجمة إلى الحافظة"
+
+#~ msgid "A network issue has occurred. Retry?"
+#~ msgstr "حصلت مشكلة في الشبكة. أأعيد المحاولة؟"
+
+#~ msgid "A network issue has occurred. Please try again."
+#~ msgstr "حصلت مشكلة في الشبكة. من فضلك أعِد المحاولة."
+
+#~ msgid "translate;translation;"
+#~ msgstr "ترجم;ترجمة;"
+
+#~ msgid "Afrikaans"
+#~ msgstr "الأفريقانية"
+
+#~ msgid "Albanian"
+#~ msgstr "الألبانية"
+
+#~ msgid "Amharic"
+#~ msgstr "الأمهرية"
+
+#~ msgid "Arabic"
+#~ msgstr "العربية"
+
+#~ msgid "Armenian"
+#~ msgstr "الأرمنية"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "الأذربيجانية"
+
+#~ msgid "Basque"
+#~ msgstr "الباسكية"
+
+#~ msgid "Belarusian"
+#~ msgstr "البيلاروسية"
+
+#~ msgid "Bengali"
+#~ msgstr "البنغالية"
+
+#~ msgid "Bosnian"
+#~ msgstr "البوسنية"
+
+#~ msgid "Bulgarian"
+#~ msgstr "البلغارية"
+
+#~ msgid "Catalan"
+#~ msgstr "الكتالانية"
+
+#~ msgid "Cebuano"
+#~ msgstr "السيبيوانية"
+
+#~ msgid "Chichewa"
+#~ msgstr "النيانجا"
+
+#~ msgid "Chinese"
+#~ msgstr "الصينية"
+
+#~ msgid "Chinese (Simplified)"
+#~ msgstr "الصينية المبسطة"
+
+#~ msgid "Chinese (Traditional)"
+#~ msgstr "الصينية التقليدية"
+
+#~ msgid "Corsican"
+#~ msgstr "الكورسيكية"
+
+#~ msgid "Croatian"
+#~ msgstr "الكرواتية"
+
+#~ msgid "Czech"
+#~ msgstr "التشيكية"
+
+#~ msgid "Danish"
+#~ msgstr "الدانمركية"
+
+#~ msgid "Dutch"
+#~ msgstr "الهولندية"
+
+#~ msgid "English"
+#~ msgstr "الإنجليزية"
+
+#~ msgid "Esperanto"
+#~ msgstr "الإسبرانتو"
+
+#~ msgid "Estonian"
+#~ msgstr "الإستونية"
+
+#~ msgid "Filipino"
+#~ msgstr "التاغالوغية"
+
+#~ msgid "Finnish"
+#~ msgstr "الفنلندية"
+
+#~ msgid "French"
+#~ msgstr "الفرنسية"
+
+#~ msgid "Frisian"
+#~ msgstr "الفريزيان"
+
+#~ msgid "Galician"
+#~ msgstr "الجاليكية"
+
+#~ msgid "Georgian"
+#~ msgstr "الجورجية"
+
+#~ msgid "German"
+#~ msgstr "الألمانية"
+
+#~ msgid "Greek"
+#~ msgstr "اليونانية"
+
+#~ msgid "Gujarati"
+#~ msgstr "الغوجاراتية"
+
+#~ msgid "Haitian Creole"
+#~ msgstr "الكريولية الهايتية"
+
+#~ msgid "Hausa"
+#~ msgstr "الهوسا"
+
+#~ msgid "Hawaiian"
+#~ msgstr "لغة هاواي"
+
+#~ msgid "Hebrew"
+#~ msgstr "العبرية"
+
+#~ msgid "Hindi"
+#~ msgstr "الهندية"
+
+#~ msgid "Hmong"
+#~ msgstr "الهمونجية"
+
+#~ msgid "Hungarian"
+#~ msgstr "الهنغارية"
+
+#~ msgid "Icelandic"
+#~ msgstr "الأيسلندية"
+
+#~ msgid "Igbo"
+#~ msgstr "الإيجبو"
+
+#~ msgid "Indonesian"
+#~ msgstr "الإندونيسية"
+
+#~ msgid "Irish"
+#~ msgstr "الأيرلندية"
+
+#~ msgid "Italian"
+#~ msgstr "الإيطالية"
+
+#~ msgid "Japanese"
+#~ msgstr "اليابانية"
+
+#~ msgid "Javanese"
+#~ msgstr "الجاوية"
+
+#~ msgid "Kannada"
+#~ msgstr "الكانادا"
+
+#~ msgid "Kazakh"
+#~ msgstr "الكازاخستانية"
+
+#~ msgid "Khmer"
+#~ msgstr "الخميرية"
+
+#~ msgid "Kinyarwanda"
+#~ msgstr "الكينيارواندا"
+
+#~ msgid "Korean"
+#~ msgstr "الكورية"
+
+#~ msgid "Kurdish (Kurmanji)"
+#~ msgstr "الكردية"
+
+#~ msgid "Kyrgyz"
+#~ msgstr "القيرغيزية"
+
+#~ msgid "Lao"
+#~ msgstr "اللاوية"
+
+#~ msgid "Latin"
+#~ msgstr "اللاتينية"
+
+#~ msgid "Latvian"
+#~ msgstr "اللاتفية"
+
+#~ msgid "Lithuanian"
+#~ msgstr "الليتوانية"
+
+#~ msgid "Luxembourgish"
+#~ msgstr "اللكسمبورغية"
+
+#~ msgid "Macedonian"
+#~ msgstr "المقدونية"
+
+#~ msgid "Malagasy"
+#~ msgstr "الملغاشي"
+
+#~ msgid "Malay"
+#~ msgstr "الماليزية"
+
+#~ msgid "Malayalam"
+#~ msgstr "المالايالامية"
+
+#~ msgid "Maltese"
+#~ msgstr "المالطية"
+
+#~ msgid "Maori"
+#~ msgstr "الماورية"
+
+#~ msgid "Marathi"
+#~ msgstr "الماراثية"
+
+#~ msgid "Mongolian"
+#~ msgstr "المنغولية"
+
+#~ msgid "Myanmar (Burmese)"
+#~ msgstr "البورمية"
+
+#~ msgid "Nepali"
+#~ msgstr "النيبالية"
+
+#~ msgid "Norwegian"
+#~ msgstr "النرويجية"
+
+#~ msgid "Odia (Oriya)"
+#~ msgstr "الأورية"
+
+#~ msgid "Pashto"
+#~ msgstr "البشتو"
+
+#~ msgid "Persian"
+#~ msgstr "الفارسية"
+
+#~ msgid "Polish"
+#~ msgstr "البولندية"
+
+#~ msgid "Portuguese"
+#~ msgstr "البرتغالية"
+
+#~ msgid "Punjabi"
+#~ msgstr "البنجابية"
+
+#~ msgid "Romanian"
+#~ msgstr "الرومانية"
+
+#~ msgid "Russian"
+#~ msgstr "الروسية"
+
+#~ msgid "Samoan"
+#~ msgstr "الساموائية"
+
+#~ msgid "Scots Gaelic"
+#~ msgstr "الغيلية الأسكتلندية"
+
+#~ msgid "Serbian"
+#~ msgstr "الصربية"
+
+#~ msgid "Sesotho"
+#~ msgstr "السوتو الجنوبية"
+
+#~ msgid "Shona"
+#~ msgstr "الشونا"
+
+#~ msgid "Sindhi"
+#~ msgstr "السندية"
+
+#~ msgid "Sinhala"
+#~ msgstr "السنهالية"
+
+#~ msgid "Slovak"
+#~ msgstr "السلوفاكية"
+
+#~ msgid "Slovenian"
+#~ msgstr "السلوفانية"
+
+#~ msgid "Somali"
+#~ msgstr "الصومالية"
+
+#~ msgid "Spanish"
+#~ msgstr "الإسبانية"
+
+#~ msgid "Sundanese"
+#~ msgstr "السوندانية"
+
+#~ msgid "Swahili"
+#~ msgstr "السواحلية"
+
+#~ msgid "Swedish"
+#~ msgstr "السويدية"
+
+#~ msgid "Tajik"
+#~ msgstr "الطاجيكية"
+
+#~ msgid "Tamil"
+#~ msgstr "التاميلية"
+
+#~ msgid "Tatar"
+#~ msgstr "التترية"
+
+#~ msgid "Telugu"
+#~ msgstr "التيلوغوية"
+
+#~ msgid "Thai"
+#~ msgstr "التايلاندية"
+
+#~ msgid "Turkish"
+#~ msgstr "التركية"
+
+#~ msgid "Turkmen"
+#~ msgstr "التركمانية"
+
+#~ msgid "Ukrainian"
+#~ msgstr "الأوكرانية"
+
+#~ msgid "Urdu"
+#~ msgstr "الأوردية"
+
+#~ msgid "Uyghur"
+#~ msgstr "الأويغورية"
+
+#~ msgid "Uzbek"
+#~ msgstr "الأوزبكية"
+
+#~ msgid "Vietnamese"
+#~ msgstr "الفيتنامية"
+
+#~ msgid "Welsh"
+#~ msgstr "الويلزية"
+
+#~ msgid "Xhosa"
+#~ msgstr "الخوسا"
+
+#~ msgid "Yiddish"
+#~ msgstr "اليديشية"
+
+#~ msgid "Yoruba"
+#~ msgstr "اليوروبا"
+
+#~ msgid "Zulu"
+#~ msgstr "الزولو"
+
+#~ msgid "GitHub page"
+#~ msgstr "صفحة جت هب"
+
+#~ msgid "Translator Instance"
+#~ msgstr "حالة المترجِم"
+
+#~ msgid "Enter a translation service URL."
+#~ msgstr "يرجى إدخال عنوان URL لخدمة الترجمة."
+
+#~ msgid "Edit"
+#~ msgstr "تعديل"
+
+#~ msgid "Use Google for TTS."
+#~ msgstr "إستخدام جوجل ل TTS ."
+
+#~ msgid "Switch languages"
+#~ msgstr "تغيير اللغة"
+
+#, python-brace-format
+#~ msgid "Not a valid {backend} instance"
+#~ msgstr "مثيل {backend} غير صالح"
+
+#, python-brace-format
+#~ msgid "Not a valid {backend} API key"
+#~ msgstr "مفتاح API {backend} غير صالح"
+
+#, python-brace-format
+#~ msgid ""
+#~ "Failed loading \"{url}\", check if the instance address is correct or "
+#~ "report in the Dialect bug tracker if the issue persists."
+#~ msgstr ""
+#~ "فشل تحميل \"{url}\"، تحقق من صلاحية المثيل أو أبلغ في متتبع الأخطاء الخاص "
+#~ "بدايلكت إذا استمرت هذه المشكلة."
+
+#, python-brace-format
+#~ msgid ""
+#~ "We can’t connect to the {service} instance \"{url}\".\n"
+#~ " Please check for network issues or if the address is correct."
+#~ msgstr ""
+#~ "لا يمكننا التصال بمثيل {service} على \"{url}\".\n"
+#~ "يرجى التحقق من مشاكل الشبكة أو من صحة العنوان."
+
+#~ msgid ""
+#~ "To reduce API abuse, the GNOME search provider in Dialect is turned off "
+#~ "when Live translation is. Ensure the search provider is also turned on in "
+#~ "the GNOME Settings."
+#~ msgstr ""
+#~ "لتقليل إساءة استخدام واجهة برمجة التطبيقات ، يتم إيقاف تشغيل موفر بحث "
+#~ "جنوم في Dialect عندما تكون الترجمة مباشرة. تأكد من تشغيل موفر البحث أيضًا "
+#~ "في إعدادات جنوم."
+
+#~ msgid "No network connection detected."
+#~ msgstr "لا يوجد اتصال بالشبكة."
